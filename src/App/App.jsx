@@ -7,7 +7,7 @@ import Footer from "../Components/Footer";
 
 export default function App () {
   return(
-    <div className="bg-cover bg-center bg-opacity-75 bg-blur w-screen" style={{ backgroundImage: `url(./images/cover.jpg)` }}>
+    <div className="bg-cover bg-center bg-opacity-75 bg-blur w-screen" style={{ backgroundImage: `url(https://i.imgur.com/dDFA4lp.jpg)` }}>
     <NavBar/>
     <Routes>
       <Route path='/' element={<About/>}/>

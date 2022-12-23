@@ -54,13 +54,13 @@ export default function NavBar() {
                 <div className="flex flex-shrink-0 items-center">
                   <img
                     className="block h-8 w-auto lg:hidden"
-                    src="./images/code1.png"
-                    alt="Your Company"
+                    src="https://i.imgur.com/FUC7vL0.png"
+                    alt="logo"
                   />
                   <img
                     className="hidden h-8 w-auto lg:block"
-                    src="./images/code1.png"
-                    alt="Your Company"
+                    src="https://i.imgur.com/FUC7vL0.png"
+                    alt="logo"
                   />
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
@@ -90,8 +90,8 @@ export default function NavBar() {
                       <span className="sr-only">Open user menu</span>
                       <img
                         className="h-8 w-8 rounded-full"
-                        src="./images/samhay.jpg"
-                        alt=""
+                        src="https://i.imgur.com/gpSFTPD.jpg"
+                        alt="sam hay"
                       />
                     </Menu.Button>
                   </div>

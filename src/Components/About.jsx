@@ -8,7 +8,7 @@ export default function About () {
         <br></br>
     <div class="text-center">
       <img
-        src="./images/samhay2.jpg"
+        src="https://i.imgur.com/1r18vie.jpg"
         class="rounded-full w-32 mb-4 mx-auto shadow-lg"
         alt="Avatar"
       />
