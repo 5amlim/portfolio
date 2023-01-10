@@ -5,14 +5,13 @@ body {
   .arrows {
     width: 60px;
     height: 72px;
-    position: absolute;
+    position: relative;
     left: 50%;
     margin-left: -30px;
-    bottom: 20px;
   }
   
   .arrows path {
-    stroke: #2994D1;
+    stroke: #83b5d2;
     fill: transparent;
     stroke-width: 1px;  
     animation: arrow 2s infinite;
@@ -49,3 +48,69 @@ body {
     animation-delay:0s;
     -webkit-animation-delay:0s; /* Safari 和 Chrome */
   }
+
+ .about {
+    height:auto;
+    background-color:#ffffff;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .projects {
+    height: auto;
+    background-color:#eeeeeb;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .contacts {
+    height: auto;
+    background-color:#e1e3e3;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .more {
+    height: auto;
+    background-color:#ffffff;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 150px;
+  }
+
+  .main-content {
+    position: relative;
+  
+  }
+
+  footer {
+    position:fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+
+  .skills {
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+.scrollToTop{
+  position:fixed;
+  bottom: 50;
+}
+
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: var(--red);
+  transform-origin: 0%;
+}

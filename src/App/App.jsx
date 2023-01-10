@@ -1,21 +1,99 @@
+import { useRef} from 'react'
+import { useInView } from "framer-motion";
 import NavBar from "../Components/NavBar";
-import { Route, Routes } from "react-router-dom";
-import Contact from "../Components/Contact"
-import Projects from "../Components/Projects";
+import Introduction from "../Components/Introduction";
 import About from "../Components/About";
+import Projects from "../Components/Projects";
+import Contact from "../Components/Contact";
 import Footer from "../Components/Footer";
+import More from '../Components/More';
+import './App.css'
+
+
+function Section({ children }) {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
+  return (
+    <section ref={ref}>
+      <span
+        style={{
+          transform: isInView ? "none" : "translateX(-500px)",
+          opacity: isInView ? 1 : 0,
+          transition: "all 1s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+        }}
+      >
+        {children}
+      </span>
+    </section>
+  );
+}
+
 
 export default function App () {
+  const topPart = useRef(null)
+  const about = useRef(null)
+  const projects = useRef(null)
+  const contact = useRef(null)
+
+  const scrollToSection = (elementRef) => {
+    window.scrollTo({
+      top: elementRef.current.offsetTop,
+      behavior: 'smooth',
+    })
+  }
+
+
+
   return(
-    <div className="bg-cover bg-center bg-opacity-75 bg-blur w-screen" style={{ backgroundImage: `url(https://i.imgur.com/dDFA4lp.jpg)` }}>
-    <NavBar/>
-    <Routes>
-      <Route path='/' element={<About/>}/>
-      <Route path='/about' element={<About/>}/>
-      <Route path='/projects' element={<Projects/>}/>
-      <Route path='/contact' element={<Contact/>}/>
-    </Routes>
-    <Footer/>
+    <div>
+
+      <div className="main-content bg-gradient-to-r from-orange-400 via-sky-800 to-indigo-400 bg-cover bg-center bg-opacity-75 bg-blur w-screen">
+        {/* navbar */}
+        <NavBar scrollToSection={scrollToSection} about={about} projects={projects} contact={contact}/>
+          
+        
+        {/* top part */}
+        <div className="bg-cover bg-center bg-opacity-75 bg-blur h-screen w-screen" >
+          <br></br>
+          
+          
+          <div ref={topPart} >
+            <Section>
+              <Introduction />
+            </Section> 
+          </div>
+
+          <br></br>
+          <br></br>
+
+          <div ref={about} className="about">
+            <Section>
+              <About/>
+            </Section>
+          </div>
+
+          <div ref={projects} className="projects">
+            <Section>
+              <Projects /> 
+            </Section>
+          </div>
+
+          <div ref={contact} className="contacts">
+            <Section>
+              <Contact Section={Section}/>
+            </Section>
+          </div>
+
+          <div className="more">
+            <Section>
+              <More/>
+            </Section>
+          </div>
+        
+        </div>     
+      </div>
+      <Footer scrollToSection={scrollToSection} topPart={topPart}/>
     </div>
   )
 }
