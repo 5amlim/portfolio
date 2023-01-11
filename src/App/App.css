@@ -67,7 +67,7 @@ body {
 
   .contacts {
     height: auto;
-    background-color:#e1e3e3;
+    background-color:#ffffff;
     padding-top: 50px;
     padding-left: 50px;
     padding-right: 50px;
@@ -82,6 +82,14 @@ body {
     padding-bottom: 150px;
   }
 
+  .testimonial {
+    height: full;
+    background-color:#e1e3e3;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
   .main-content {
     position: relative;
   
@@ -92,6 +100,7 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
+    z-index: 1;
   }
 
 
@@ -100,17 +109,84 @@ body {
     margin-bottom: 20px;
   }
 
-.scrollToTop{
-  position:fixed;
-  bottom: 50;
+/* .scrollToTop{
+  position: fixed;
+  bottom: 50px;
+  left: 50%;
+  right: 50%;
+  z-index: 1;
+  
+} */
+
+.screenshots{
+  margin-left: 150px;
+  margin-bottom: 0px;
 }
 
-.progress-bar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 10px;
-  background: var(--red);
-  transform-origin: 0%;
+.project {
+  margin-left: 650px;
+  min-width: auto;
 }
+
+@media (max-width: 1040px){
+.project {
+  margin-left: 400px;
+  font-size: small;
+}
+.screenshots{
+  margin-left: 100px;
+  width: 250px;
+  font-size: small;
+}
+}
+
+@media (max-width: 780px){
+  .project {
+    margin-left: 220px;
+    width: 300px;
+    font-size: small;
+  }
+  .screenshots{
+    margin-left: 0;
+    width: 200px;
+    font-size: small;
+  }
+  }
+
+@media (max-width: 580px){
+  .project {
+    margin-left: 100px;
+    width: 300px;
+    font-size: small;
+  }
+  .screenshots{
+    margin-left: 0;
+    width: 200px;
+    font-size: small;
+  }
+  }
+
+  @media (min-width: 1800px){
+    .project {
+      margin-left: 1000px;
+      width: 500px;
+    }
+    .screenshots{
+      margin-left: 500px;
+      width: 500px;
+    }
+    }
+
+ .testimonial-description{
+  margin-left: 20px;
+  margin-right: 20px;
+ }
+
+ .testimonial-cards{
+  z-index: 0;
+ }
+
+ .NavBar{
+  z-index: 1;
+ }
+ 

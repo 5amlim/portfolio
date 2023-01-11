@@ -8,11 +8,12 @@ import Contact from "../Components/Contact";
 import Footer from "../Components/Footer";
 import More from '../Components/More';
 import './App.css'
+import Testimonial from '../Components/Testimonial';
 
 
 function Section({ children }) {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
+  const isInView = useInView(ref, { once: false });
 
   return (
     <section ref={ref}>
@@ -35,6 +36,7 @@ export default function App () {
   const about = useRef(null)
   const projects = useRef(null)
   const contact = useRef(null)
+  const testimonial = useRef(null)
 
   const scrollToSection = (elementRef) => {
     window.scrollTo({
@@ -48,9 +50,9 @@ export default function App () {
   return(
     <div>
 
-      <div className="main-content bg-gradient-to-r from-orange-400 via-sky-800 to-indigo-400 bg-cover bg-center bg-opacity-75 bg-blur w-screen">
+      <div ref={topPart} className="main-content bg-gradient-to-r from-orange-400 via-sky-800 to-indigo-400 bg-cover bg-center bg-opacity-75 bg-blur w-screen">
         {/* navbar */}
-        <NavBar scrollToSection={scrollToSection} about={about} projects={projects} contact={contact}/>
+        <NavBar scrollToSection={scrollToSection} about={about} projects={projects} contact={contact} testimonial={testimonial}/>
           
         
         {/* top part */}
@@ -58,11 +60,11 @@ export default function App () {
           <br></br>
           
           
-          <div ref={topPart} >
+
             <Section>
               <Introduction />
             </Section> 
-          </div>
+
 
           <br></br>
           <br></br>
@@ -85,7 +87,13 @@ export default function App () {
             </Section>
           </div>
 
-          <div className="more">
+          <div ref={testimonial} className="testimonial">
+            <Section>
+              <Testimonial/>
+            </Section>
+          </div>
+
+          <div ref={contact} className="more">
             <Section>
               <More/>
             </Section>
