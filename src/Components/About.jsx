@@ -2,7 +2,7 @@ import '../App/App.css'
 import 'flowbite';
 import { motion } from "framer-motion";
 
-export default function About({Section}) {
+export default function About() {
   const container = {
     hidden: { opacity: 0 },
     show: {
@@ -24,6 +24,7 @@ export default function About({Section}) {
         About Me
         </span>
         </motion.div>
+        <br></br>
         <p className='text-main'>
           As a software developer, I am passionate about tackling algorithmically complex problems and exploring new applications of technology. 
           I thrive in team environments and have a natural aptitude for problem-solving. 

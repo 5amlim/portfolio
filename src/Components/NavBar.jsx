@@ -3,11 +3,12 @@ import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { motion } from "framer-motion";
 import 'flowbite';
+import '../App/App.css'
 
-export default function NavBar ({scrollToSection, projects, about, contact}) {
+export default function NavBar ({scrollToSection, projects, about, contact, testimonial}) {
 
     return (
-        <Disclosure as="nav" className="sticky top-0 bg-gray-800/70">
+        <Disclosure as="nav" className="NavBar sticky top-0 bg-gray-800/70">
         {({ open }) => (
           <>
             <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -85,10 +86,26 @@ export default function NavBar ({scrollToSection, projects, about, contact}) {
                     </div>
                   </div>
 
+                  <div className="hidden sm:ml-6 sm:block">
+                    <div className="flex space-x-4 justify-center">
+                        <a
+                          as="div"
+                          className=" text-white hover:bg-gray-700 hover:text-white hover:cursor-pointer
+                            px-3 py-2 rounded-md text-sm font-medium"
+                          onClick={() => scrollToSection(testimonial)}
+                        >
+                          <motion.p whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
+                            Testimonials
+                          </motion.p>
+                        </a>
+                      
+                    </div>
+                  </div>
+
                 </div>
                 <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                   {/* Profile dropdown */}
-                  <Menu as="div" className="relative ml-3">
+                  <Menu as="div" className="NavBar relative ml-3">
                     <div>
                       <Menu.Button type="button" data-popover-target="popover" data-popover-placement="bottom" className="flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
                       {/* Popover */}
@@ -124,7 +141,7 @@ export default function NavBar ({scrollToSection, projects, about, contact}) {
                       leaveTo="transform opacity-0 scale-95"
                     >
                       {/* Top Right Links */}
-                      <Menu.Items className="absolute right-0 z-10 mt-2 w-40 origin-top-right rounded-md bg-white/60 py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                      <Menu.Items className=" absolute right-0 z-10 mt-2 w-40 origin-top-right rounded-md bg-white/60 py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                         <Menu.Item>
                           {({ active }) => (
                               <p align="center">
@@ -223,6 +240,14 @@ export default function NavBar ({scrollToSection, projects, about, contact}) {
                     <motion.p whileHover={{ scale: 1.1, x:25}} whileTap={{ scale: 0.9 }}>Contact</motion.p>
                   </Disclosure.Button>
 
+                  <Disclosure.Button
+                    as="a"
+                    onClick={() => scrollToSection(testimonial)}
+                    className=" text-white hover:bg-gray-700 hover:text-white
+                      block px-3 py-2 rounded-md text-base font-medium"
+                  >
+                    <motion.p whileHover={{ scale: 1.1, x:25}} whileTap={{ scale: 0.9 }}>Testimonials</motion.p>
+                  </Disclosure.Button>
 
               </motion.div>
             </Disclosure.Panel>

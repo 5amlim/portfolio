@@ -1,20 +1,50 @@
 import '../App/App.css'
+import { useState, useEffect } from 'react'
+import { motion } from "framer-motion";
 
 export default function Footer ({scrollToSection, topPart}) {
 
+    const [showIcon, setShowIcon] = useState(false)
+
+    const handleScroll = () => {
+        if (window.pageYOffset >= 100) {
+        setShowIcon(true)
+        } else {
+        setShowIcon(false)
+        }
+    }
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll)
+        return () => {
+        window.removeEventListener('scroll', handleScroll)
+        }
+    }, [])
 
     return (
     <div>
 
         <footer class="p-4 bg-white sm:p-6 dark:bg-gray-900">
-        <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
-        <a href="#" onClick={() => scrollToSection(topPart)} class="text-gray-500 hover:text-gray-900 dark:hover:text-white scrollToTop">
+        
+        {showIcon?
+        <motion.div           
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 2 }}
+            transition={{
+              duration: 0.8,
+              delay: 0.5,
+              ease: [0, 0.71, 0.2, 1.01]}} 
+            class="flex mt-4 space-x-6 justify-center sm:mt-0">
+        <motion.a whileHover={{ scale: 1.2 }} href="#" onClick={() => scrollToSection(topPart)} class="text-gray-500 hover:text-violet-900 dark:hover:text-white scrollToTop">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                     <span class="sr-only">Dribbbel account</span>
-        </a>
-        </div>
+        </motion.a>
+        </motion.div>
+        :
+        <div></div>
+        }
             <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
             <div class="sm:flex sm:items-center sm:justify-between">
                 <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="" class="hover:underline">Sam Hay</a>. All Rights Reserved.
