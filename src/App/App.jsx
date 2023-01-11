@@ -93,7 +93,7 @@ export default function App () {
             </Section>
           </div>
 
-          <div ref={contact} className="more">
+          <div className="more">
             <Section>
               <More/>
             </Section>
