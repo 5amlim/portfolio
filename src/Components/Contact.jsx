@@ -1,6 +1,6 @@
 export default function Contact () {
     return (
-        <>
+        <div className="components">
 
         <span class="text-5xl shadow-2xl box-decoration-clone bg-gradient-to-r from-indigo-600 to-pink-500 text-white px-2">
         Contact
@@ -13,6 +13,6 @@ export default function Contact () {
         The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
         </p>
         <br></br>
-        </>
+        </div>
     )
 }

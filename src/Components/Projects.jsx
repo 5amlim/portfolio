@@ -44,7 +44,7 @@ function Image({ name }: { name: number }) {
 
         
     return(
-        <>
+        <div className="components">
         <span  class="text-right float-right  text-5xl box-decoration-clone bg-gradient-to-r from-violet-500/90 to-blue-900 text-white px-2 ">
         My<br/>Projects
         </span>
@@ -58,9 +58,9 @@ function Image({ name }: { name: number }) {
         </div>
         
         {ProjectData.map((image) => (
-        <Image name={image} />
+        <Image name={image} key={image.img} />
         ))}
 
-        </>
+        </div>
     )
 }

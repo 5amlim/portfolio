@@ -1,3 +1,4 @@
+
 body {
     background:#0b1d2a;
   }
@@ -51,6 +52,7 @@ body {
 
  .about {
     height:auto;
+    width: auto;
     background-color:#ffffff;
     padding-top: 50px;
     padding-left: 50px;
@@ -59,6 +61,7 @@ body {
 
   .projects {
     height: auto;
+    width: auto;
     background-color:#eeeeeb;
     padding-top: 50px;
     padding-left: 50px;
@@ -67,6 +70,7 @@ body {
 
   .contacts {
     height: auto;
+    width: auto;
     background-color:#ffffff;
     padding-top: 50px;
     padding-left: 50px;
@@ -75,6 +79,7 @@ body {
 
   .more {
     height: auto;
+    width: auto;
     background-color:#ffffff;
     padding-top: 50px;
     padding-left: 50px;
@@ -83,7 +88,8 @@ body {
   }
 
   .testimonial {
-    height: full;
+    height: auto;
+    width: auto;
     background-color:#e1e3e3;
     padding-top: 50px;
     padding-left: 50px;
@@ -91,13 +97,12 @@ body {
   }
 
   .main-content {
-    position: relative;
-  
+    width: auto
   }
 
-  footer {
+  .scroll-up {
     position:fixed;
-    bottom: 0;
+    bottom: 50px;
     left: 0;
     right: 0;
     z-index: 1;
@@ -109,15 +114,6 @@ body {
     margin-bottom: 20px;
   }
 
-/* .scrollToTop{
-  position: fixed;
-  bottom: 50px;
-  left: 50%;
-  right: 50%;
-  z-index: 1;
-  
-} */
-
 .screenshots{
   margin-left: 150px;
   margin-bottom: 0px;
@@ -128,6 +124,12 @@ body {
   min-width: auto;
 }
 
+.testimonial-cards{
+  z-index: 0;
+  width: 1000px
+ }
+
+ 
 @media (max-width: 1040px){
 .project {
   margin-left: 400px;
@@ -138,7 +140,12 @@ body {
   width: 250px;
   font-size: small;
 }
+.testimonial-cards{
+  z-index: 0;
+  width: 760px;
+ }
 }
+
 
 @media (max-width: 780px){
   .project {
@@ -151,7 +158,14 @@ body {
     width: 200px;
     font-size: small;
   }
+  .testimonial-cards{
+    z-index: 0;
+    width: 560px;
+    font-size: small;
+   }
   }
+
+
 
 @media (max-width: 580px){
   .project {
@@ -163,30 +177,41 @@ body {
     margin-left: 0;
     width: 200px;
     font-size: small;
+    
   }
-  }
+  .testimonial-cards{
+    z-index: 0;
+    width: 450px;
+    font-size: small;
+   }
+}
 
-  @media (min-width: 1800px){
+  @media (max-width: 455px){
     .project {
-      margin-left: 1000px;
-      width: 500px;
+      margin-left: 0px;
+      width: 250px;
+      font-size: small;
     }
     .screenshots{
-      margin-left: 500px;
-      width: 500px;
+      margin-left: 0;
+      width: 200px;
+      font-size: small;
     }
+    .testimonial-cards{
+      z-index: 0;
+      width: auto;
+      font-size: x-small;
+     }
     }
+
+
 
  .testimonial-description{
   margin-left: 20px;
   margin-right: 20px;
  }
 
- .testimonial-cards{
-  z-index: 0;
- }
 
  .NavBar{
   z-index: 1;
  }
- 

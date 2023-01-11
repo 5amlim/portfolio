@@ -5,7 +5,7 @@ import Introduction from "../Components/Introduction";
 import About from "../Components/About";
 import Projects from "../Components/Projects";
 import Contact from "../Components/Contact";
-import Footer from "../Components/Footer";
+import ScrollUp from "../Components/ScrollUp";
 import More from '../Components/More';
 import './App.css'
 import Testimonial from '../Components/Testimonial';
@@ -50,7 +50,7 @@ export default function App () {
   return(
     <div>
 
-      <div ref={topPart} className="main-content bg-gradient-to-r from-orange-400 via-sky-800 to-indigo-400 bg-cover bg-center bg-opacity-75 bg-blur w-screen">
+      <div ref={topPart} className="main-content bg-gradient-to-r from-orange-400 via-sky-800 to-indigo-400 bg-cover bg-center bg-opacity-75 bg-blur ">
         {/* navbar */}
         <NavBar scrollToSection={scrollToSection} about={about} projects={projects} contact={contact} testimonial={testimonial}/>
           
@@ -101,7 +101,7 @@ export default function App () {
         
         </div>     
       </div>
-      <Footer scrollToSection={scrollToSection} topPart={topPart}/>
+      < ScrollUp scrollToSection={scrollToSection} topPart={topPart}/>
     </div>
   )
 }

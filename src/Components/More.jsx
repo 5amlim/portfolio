@@ -1,7 +1,7 @@
 export default function More() {
 
     return(
-        <>
+        <div className="components">
             <br></br>
             <br></br>
             <p className="text-5xl">Professional Experience</p>
@@ -50,6 +50,6 @@ export default function More() {
 
 
 
-        </>
+        </div>
     )
 }
