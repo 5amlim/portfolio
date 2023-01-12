@@ -11,8 +11,7 @@ export default function Contact () {
 
     const sendEmail = (e) => {
         e.preventDefault();
-        console.log('🪲', form.current.name)
-
+        
         setSuccessMessage("Email sent successfully!");
 
         emailjs.sendForm('service_xf05e6p', 'template_q30u53v', form.current, 'bec8wIn8FMgAK44c3')
