@@ -27,6 +27,13 @@ export const Data = [
         description:
           "While Sam and I were working together it always impressed me how on top of things he was. Sam is committed to studying and practicing new concepts until he's able to master them. He was easily one of the most kind and helpful people in our class, because if someone didn’t understand something or they were falling behind he would always reexplain concepts to them, or help them with bug fixes. Sam would be an incredible member of any team",
       },
+      {
+        id: 5,
+        image: "https://i.imgur.com/XOyMOa7.jpg",
+        title: "Joseph King",
+        description:
+          "Sam is highly personable and engaging! I worked alongside Sam on several projects utilizing Express, React, and/or Django frameworks. It's always a pleasure to tackle complex problems with Sam because he has a very positive and curious outlook! It was always surprising to see him come up with elegant solutions and break down the research and steps he took to arrive at an answer in a simple way. I enjoyed brainstorming and mob-coding alongside Sam and wish him the best on his career path! I highly recommend Sam, if not for his technical skills, for his creative and curious troubleshooting, passion for research and learning, and engaging personality he brings in a team environment!",
+      },
   ];
 
   export const ProjectData = [
