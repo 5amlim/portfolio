@@ -49,7 +49,7 @@ export const Data = [
         name: "FOODMoji",
         img: "https://i.imgur.com/1QKdAC9.png",
         tech: "JavaScript, REACT, MongoDB, Mongoose, Express, Node.js, CSS & Bootstrap, JavaScript, JWT",
-        description: "A MERN-stack single-page application (SPA) grocery shopping website",
+        description: "A MERN-stack single-page application (SPA) grocery shopping website.",
         link: "https://foodmoji.herokuapp.com/",
         github: "https://github.com/5amlim/foodmoji"
     },
@@ -57,7 +57,7 @@ export const Data = [
         name: "My Music",
         img: "https://i.imgur.com/tEdwIXr.png",
         tech: "Python, Django, PostgreSQL, Materialize, AWS",
-        description: "Music session tracking website. Photo upload using AWS",
+        description: "Music session tracking website. Photo upload using AWS.",
         link: "",
         github: "https://github.com/5amlim/mymusic_app"
     },
