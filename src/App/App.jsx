@@ -81,9 +81,9 @@ export default function App () {
             </Section>
           </div>
 
-          <div ref={contact} className="contacts">
+          <div className="more">
             <Section>
-              <Contact Section={Section}/>
+              <More/>
             </Section>
           </div>
 
@@ -93,9 +93,9 @@ export default function App () {
             </Section>
           </div>
 
-          <div className="more">
+          <div ref={contact} className="contacts">
             <Section>
-              <More/>
+              <Contact Section={Section}/>
             </Section>
           </div>
         

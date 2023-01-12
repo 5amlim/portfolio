@@ -17,8 +17,8 @@ export default function Contact () {
 
 
                 <div class="mx-auto w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
-                    <div class="flex justify-end px-4 pt-4">
-                    </div>
+                    <br></br>
+                    <br></br>
                     <div class="flex flex-col items-center pb-10">
                         <img class="w-24 h-24 mb-3 rounded-full shadow-lg" src="https://i.imgur.com/gpSFTPD.jpg" alt="Sam Hay"/>
                         <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">Sam Hay</h5>
@@ -39,7 +39,7 @@ export default function Contact () {
                         </div>
                         <br></br>
                         <p class="text-sm text-gray-500 dark:text-gray-400">Resume</p>
-                        <a href="https://twitter.com/5amlim" target="_blank" rel="noopener noreferrer" className="social-wrapper text-gray-400 hover:text-gray-900 dark:hover:text-white ">
+                        <a href="https://docs.google.com/document/d/1R7FVwXQkvP-qNXnVpGa3oxGP3hoaOQukBjyUVKQ2B0Y/edit?usp=sharing" target="_blank" rel="noopener noreferrer" className="social-wrapper text-gray-400 hover:text-gray-900 dark:hover:text-white ">
                             <img src="https://img.icons8.com/carbon-copy/100/null/resume.png" className="w-10 h-10 transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0"></img>
                             <p className="hide-social">VIEW</p>
                         </a>
@@ -100,7 +100,10 @@ export default function Contact () {
                     <br></br>
             </div>
 
-
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
         </div>
     )
 }
