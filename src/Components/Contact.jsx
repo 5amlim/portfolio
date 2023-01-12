@@ -50,14 +50,14 @@ export default function Contact () {
                         
                         <div className="contact-card justify-left flex mt-4 space-x-3 md:mt-6">
                             <div className="contact-card text-left items-center px-4 py-2 text-sm font-medium text-black bg-gray-100 rounded-lg border-black dark:bg-gray-300">
-                                <div className="inline-flex">
+                                <div className="hover:text-violet-800 inline-flex">
                                 <img className="w-5 h-5" src="https://img.icons8.com/external-royyan-wijaya-detailed-outline-royyan-wijaya/96/null/external-phone-communication-royyan-wijaya-detailed-outline-royyan-wijaya.png"></img>
-                                <p> &nbsp; &nbsp;415-340-9153</p>
+                                <a href = "tel: 415-340-9153"><p> &nbsp; &nbsp;(415)-340-9153</p></a>
                                 </div>
                                 <br></br>
-                                <div className="inline-flex">
+                                <div className="hover:text-violet-800 inline-flex">
                                 <img className="w-5 h-5" src="https://img.icons8.com/ios/100/null/secured-letter--v1.png"></img>
-                                <p> &nbsp; snh68@yahoo.com</p>
+                                <a href = "mailto: snh68@yahoo.com"><p> &nbsp; snh68@yahoo.com</p></a>
                                 </div>
                             </div>
                         </div>
