@@ -1,7 +1,31 @@
 import 'flowbite';
 import '../App/App.css'
+import React, { useRef, useState } from 'react';
+import emailjs from 'emailjs-com';
+
+
 
 export default function Contact () {
+    const [successMessage, setSuccessMessage] = useState(null)
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+        console.log('🪲', form.current.name)
+
+        setSuccessMessage("Email sent successfully!");
+
+        emailjs.sendForm('service_xf05e6p', 'template_q30u53v', form.current, 'bec8wIn8FMgAK44c3')
+          .then((result) => {
+              console.log(result.text);
+          }, (error) => {
+              console.log(error.text);
+          });
+          e.target.reset()
+      };
+    
+
+
     return (
         <div className="components">
             <p className="text-center text-5xl text-black px-2">
@@ -16,16 +40,16 @@ export default function Contact () {
 
 
 
-                <div class="mx-auto w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
+                <div className="mx-auto w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
                     <br></br>
                     <br></br>
-                    <div class="flex flex-col items-center pb-10">
-                        <img class="w-24 h-24 mb-3 rounded-full shadow-lg" src="https://i.imgur.com/gpSFTPD.jpg" alt="Sam Hay"/>
-                        <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">Sam Hay</h5>
-                        <span class="text-sm text-gray-500 dark:text-gray-400">Software Engineer</span>
+                    <div className="flex flex-col items-center pb-10">
+                        <img className="w-24 h-24 mb-3 rounded-full shadow-lg" src="https://i.imgur.com/gpSFTPD.jpg" alt="Sam Hay"/>
+                        <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">Sam Hay</h5>
+                        <span className="text-sm text-gray-500 dark:text-gray-400">Software Engineer</span>
                         
-                        <div class="contact-card justify-left flex mt-4 space-x-3 md:mt-6">
-                            <div class="contact-card text-left items-center px-4 py-2 text-sm font-medium text-black bg-gray-100 rounded-lg border-black dark:bg-gray-300">
+                        <div className="contact-card justify-left flex mt-4 space-x-3 md:mt-6">
+                            <div className="contact-card text-left items-center px-4 py-2 text-sm font-medium text-black bg-gray-100 rounded-lg border-black dark:bg-gray-300">
                                 <div className="inline-flex">
                                 <img className="w-5 h-5" src="https://img.icons8.com/external-royyan-wijaya-detailed-outline-royyan-wijaya/96/null/external-phone-communication-royyan-wijaya-detailed-outline-royyan-wijaya.png"></img>
                                 <p> &nbsp; &nbsp;415-340-9153</p>
@@ -38,7 +62,7 @@ export default function Contact () {
                             </div>
                         </div>
                         <br></br>
-                        <p class="text-sm text-gray-500 dark:text-gray-400">Resume</p>
+                        <p className="text-sm text-gray-500 dark:text-gray-400">Resume</p>
                         <a href="https://docs.google.com/document/d/1R7FVwXQkvP-qNXnVpGa3oxGP3hoaOQukBjyUVKQ2B0Y/edit?usp=sharing" target="_blank" rel="noopener noreferrer" className="social-wrapper text-gray-400 hover:text-gray-900 dark:hover:text-white ">
                             <img src="https://img.icons8.com/carbon-copy/100/null/resume.png" className="w-10 h-10 transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0"></img>
                             <p className="hide-social">VIEW</p>
@@ -48,8 +72,8 @@ export default function Contact () {
 
 
 
-                    <div class="inline-flex items-center justify-center w-full">
-                        <hr class="w-64 h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"/>
+                    <div className="inline-flex items-center justify-center w-full">
+                        <hr className="w-64 h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"/>
                     </div>
                     <div className="flex mt-4 space-x-6 sm:justify-center md:mt-0 overflow-x-scroll mx-0">
                         <br></br>
@@ -76,22 +100,27 @@ export default function Contact () {
                 {/* right */}
                 <div className="">
 
-                <div class="email-form mx-auto w-full h-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow-md sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
-                    <form class="space-y-6" action="#">
-                        <h5 class="text-xl text-center font-medium text-gray-900 dark:text-white">Send Me an Email</h5>
+                <div className="email-form mx-auto w-full h-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow-md sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
+                    <form ref={form} className="space-y-6" onSubmit={sendEmail}>
+                        <h5 className="text-xl text-center font-medium text-gray-900 dark:text-white">Send Me an Email</h5>
                         <div>
-                            <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
-                            <input type="email" name="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="name@company.com" required>
+                            <label for="name" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your name</label>
+                            <input name="name" type="text" id="name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="Full Name" required>
                             </input>
                         </div>
                         <div>
-                            <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Message</label>
-                            <textarea  placeholder="Message here" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required>
+                            <label for="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
+                            <input name="email" type="email" id="email" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="name@company.com" required>
+                            </input>
+                        </div>
+                        <div>
+                            <label for="message" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Message</label>
+                            <textarea name="message" placeholder="Message here" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required>
                             </textarea>
                         </div>
                         <br></br>
-                        <button type="submit" class="w-full text-white bg-gradient-to-r from-violet-500/90 to-blue-900 rounded-lg hover:bg-violet-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 font-medium text-sm px-5 py-2.5 text-center">Submit</button>
-
+                        <button type="submit" className="w-full text-white bg-gradient-to-r from-violet-500/90 to-blue-900 rounded-lg hover:bg-violet-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 font-medium text-sm px-5 py-2.5 text-center">Submit</button>
+                        <p className="text-center text-green-500 ">{successMessage}</p>
                     </form>
                 </div>
 

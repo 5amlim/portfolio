@@ -109,12 +109,12 @@ export default function NavBar ({scrollToSection, projects, about, contact, test
                     <div>
                       <Menu.Button type="button" data-popover-target="popover" data-popover-placement="bottom" className="flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
                       {/* Popover */}
-                        <div data-popover id="popover" role="tooltip" class="absolute z-10 invisible inline-block w-64 text-sm font-light text-gray-100 transition-opacity duration-300 border border-gray-200 rounded-lg shadow-sm opacity-80 dark:text-gray-400 dark:border-gray-600 bg-black/40">
+                        <div data-popover id="popover" role="tooltip" className="absolute z-10 invisible inline-block w-64 text-sm font-light text-gray-100 transition-opacity duration-300 border border-gray-200 rounded-lg shadow-sm opacity-80 dark:text-gray-400 dark:border-gray-600 bg-black/40">
                             
-                            <div class="px-3 py-2 border-b border-gray-200/50 rounded-t-lg border-gray-500 bg-gradient-to-r from-indigo-400/50 via-blue-800 to-purple-400/50 ">
-                                <h3 class="font-semibold text-white">Connect With Me!</h3>
+                            <div className="px-3 py-2 border-b border-gray-200/50 rounded-t-lg border-gray-500 bg-gradient-to-r from-indigo-400/50 via-blue-800 to-purple-400/50 ">
+                                <h3 className="font-semibold text-white">Connect With Me!</h3>
                             </div>
-                            <div class="px-3 py-2">
+                            <div className="px-3 py-2">
                                 <p>LinkedIn <br/> GitHub<br/> Resume</p>
                             </div>
                             

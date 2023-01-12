@@ -20,7 +20,7 @@ export default function About() {
     return (
       <div className="components">
         <motion.div  initial={{ x: -500 }} animate={{ x: 0 }} transition={{ type: "spring", stiffness: 100 }}>
-        <span class="text-5xl shadow-2xl box-decoration-clone bg-gradient-to-r from-indigo-600 to-pink-500 text-white px-2">
+        <span className="text-5xl shadow-2xl box-decoration-clone bg-gradient-to-r from-indigo-600 to-pink-500 text-white px-2">
         About Me
         </span>
         </motion.div>
