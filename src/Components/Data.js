@@ -41,7 +41,7 @@ export const Data = [
         name: "Pixel Perfect",
         img: "https://i.imgur.com/oh2paA6.png",
         description: "With Pixel Perfect, you can share your photos and connect with friends and followers from around the world. Our platform is easy to use and offers a variety of features to enhance your social media experience. You can create a profile, share your photos, and engage with others by following other profiles, and liking or commenting on their photos. Whether you're a professional photographer or just love to share your life with others, our website is the perfect place to do it. Thanks for stopping by!",
-        link: "https://shielded-citadel-06625.herokuapp.com/posts/",
+        link: "https://shielded-citadel-06625.herokuapp.com/about/",
         github: "https://github.com/Pixel-Perfect1/PixelPerfect"
     },
     {
@@ -50,6 +50,13 @@ export const Data = [
         description: "A MERN-stack single-page application (SPA) grocery shopping website",
         link: "https://foodmoji.herokuapp.com/",
         github: "https://github.com/5amlim/foodmoji"
+    },
+    {
+        name: "My Music",
+        img: "https://i.imgur.com/tEdwIXr.png",
+        description: "Django app and Python. Music session tracking website. Photo upload using AWS",
+        link: "",
+        github: "https://github.com/5amlim/mymusic_app"
     },
     {
         name: "Recipe Journal",
@@ -64,5 +71,6 @@ export const Data = [
         description: "There are many variations of memory game on the web. For my first project, I wanted to make this game aesthetically pleasing to make it a little more interesting. Inspired by pixel art.",
         link: "https://5amlim.github.io/project-1/",
         github: "https://github.com/5amlim/project-1"
-    }
+    },
+
 ]
