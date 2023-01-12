@@ -40,13 +40,15 @@ export const Data = [
     {
         name: "Pixel Perfect",
         img: "https://i.imgur.com/oh2paA6.png",
-        description: "With Pixel Perfect, you can share your photos and connect with friends and followers from around the world. Our platform is easy to use and offers a variety of features to enhance your social media experience. You can create a profile, share your photos, and engage with others by following other profiles, and liking or commenting on their photos. Whether you're a professional photographer or just love to share your life with others, our website is the perfect place to do it. Thanks for stopping by!",
+        tech: "Python, Django, PostgreSQL, Materialize, AWS",
+        description: "With Pixel Perfect, you can share your photos and connect with friends and followers from around the world. Our platform is easy to use and offers a variety of features to enhance your social media experience. You can create a profile, share your photos, and engage with others by following other profiles, and liking or commenting on their photos.",
         link: "https://shielded-citadel-06625.herokuapp.com/about/",
         github: "https://github.com/Pixel-Perfect1/PixelPerfect"
     },
     {
         name: "FOODMoji",
         img: "https://i.imgur.com/1QKdAC9.png",
+        tech: "JavaScript, REACT, MongoDB, Mongoose, Express, Node.js, CSS & Bootstrap, JavaScript, JWT",
         description: "A MERN-stack single-page application (SPA) grocery shopping website",
         link: "https://foodmoji.herokuapp.com/",
         github: "https://github.com/5amlim/foodmoji"
@@ -54,20 +56,23 @@ export const Data = [
     {
         name: "My Music",
         img: "https://i.imgur.com/tEdwIXr.png",
-        description: "Django app and Python. Music session tracking website. Photo upload using AWS",
+        tech: "Python, Django, PostgreSQL, Materialize, AWS",
+        description: "Music session tracking website. Photo upload using AWS",
         link: "",
         github: "https://github.com/5amlim/mymusic_app"
     },
     {
         name: "Recipe Journal",
         img: "https://i.imgur.com/IbXRV9c.png",
-        description: "A public website to share recipes and interact with creaters by leaving comments and ratings.",
+        tech: "JavaScript, Express, MongoDB, Mongoose, Node.js, CSS & Bootstrap, Google OAuth",
+        description: "A public MEN-stack website to share recipes and interact with creaters by leaving comments and ratings.",
         link: "https://recipe-journal-5amlim.herokuapp.com/recipes",
         github: "https://github.com/5amlim/project2"
     },
     {
         name: "Memory Game",
         img: "https://i.imgur.com/DY9xeAu.png",
+        tech: "Vanilla JavaScript, CSS, HTML",
         description: "There are many variations of memory game on the web. For my first project, I wanted to make this game aesthetically pleasing to make it a little more interesting. Inspired by pixel art.",
         link: "https://5amlim.github.io/project-1/",
         github: "https://github.com/5amlim/project-1"

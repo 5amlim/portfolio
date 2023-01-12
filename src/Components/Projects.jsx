@@ -23,7 +23,8 @@ function Image({ name }: { name: number }) {
                 <p className="text-5xl text-violet-600" >{`#${name.name}`}</p>
                 <div className="max-w-sm p-6 bg-white/80 border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
 
-                    <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">{name.description}</p>
+                    <p className="mb-3 font-normal text-gray-700 dark:text-gray-400"><strong>Description:</strong><br></br>{name.description}</p>
+                    <p className="mb-3 font-normal text-gray-700 dark:text-gray-400"><strong>Technologies used:</strong><br></br> {name.tech}</p>
                     { name.link?
                     <motion.a whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} href={name.link} target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-gradient-to-r from-violet-500/90 to-blue-900 rounded-lg hover:bg-violet-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                         Demo
