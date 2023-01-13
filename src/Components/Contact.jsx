@@ -16,7 +16,7 @@ export default function Contact () {
         setTimeout(() => {
             setSuccessMessage(null);
         }, 3000);
-        
+
         emailjs.sendForm('service_xf05e6p', 'template_q30u53v', form.current, 'bec8wIn8FMgAK44c3')
           .then((result) => {
               console.log(result.text);
@@ -35,7 +35,7 @@ export default function Contact () {
             </p>
             <hr className="w-48 h-1 mx-auto my-4 bg-gray-500 border-0 rounded md:my-10 dark:bg-gray-700"></hr>
             
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid sm:grid-cols-2 grid-cols-1 gap-4">
                 {/* left */}
                 <div className="">
                 {/* content here */}
@@ -75,9 +75,9 @@ export default function Contact () {
 
 
                     <div className="inline-flex items-center justify-center w-full">
-                        <hr className="w-64 h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"/>
+                        <hr className="w-64 justify-center h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"/>
                     </div>
-                    <div className="flex mt-4 space-x-6 sm:justify-center md:mt-0 overflow-x-scroll mx-0">
+                    <div className="flex items-center justify-center mt-4 space-x-6 sm:justify-center md:mt-0 overflow-x-scroll mx-0">
                         <br></br>
 
                         <a href="https://twitter.com/5amlim" target="_blank" rel="noopener noreferrer" className="social-wrapper text-gray-400 hover:text-gray-900 dark:hover:text-white ">

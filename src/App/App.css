@@ -292,13 +292,6 @@ body {
   text-align: center;
 }
 
-@media (max-width: 455px){
-  .contact-card {
-    font-size: 7px;
-    word-wrap:normal;
-  }
-}
-
 .email-form{
   max-width: 700px;
 }
