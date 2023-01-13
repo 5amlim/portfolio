@@ -98,6 +98,10 @@ export default function Contact () {
                         </a>
                     
                     </div>
+                    <div className="sm:hidden">
+                    <br></br>
+                    <hr></hr>
+                    </div>
                 </div>
                 {/* right */}
                 <div className="">
