@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 export const Data = [
     {
       id: 1,
@@ -35,12 +37,87 @@ export const Data = [
           "Sam is highly personable and engaging! I worked alongside Sam on several projects utilizing Express, React, and/or Django frameworks. It's always a pleasure to tackle complex problems with Sam because he has a very positive and curious outlook! It was always surprising to see him come up with elegant solutions and break down the research and steps he took to arrive at an answer in a simple way. I enjoyed brainstorming and mob-coding alongside Sam and wish him the best on his career path! I highly recommend Sam, if not for his technical skills, for his creative and curious troubleshooting, passion for research and learning, and engaging personality he brings in a team environment!",
       },
   ];
+  const item = {
+    hidden: { opacity: 0 },
+    show: { opacity: 1 }
+  }
+
+  const tech = {
+    HTML:<div className="image-wrapper">
+    <motion.img variants={item} as="div" className='h-9 inline-block transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0 ' src="https://img.icons8.com/color/240/null/html-5--v1.png"></motion.img>
+    <p className="hide-text text-xsm">HTML</p>
+    </div>,
+    CSS:<div className="image-wrapper">
+    <motion.img variants={item} as="div" className='h-9 inline-block transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0' src="https://img.icons8.com/color/240/null/css3.png"></motion.img>
+    <p className="hide-text text-xsm">CSS</p>
+    </div>,
+    JavaScript:<div className="image-wrapper">
+    <motion.img variants={item} as="div" className='h-9 inline-block transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0' src="https://img.icons8.com/color/240/null/javascript--v1.png"></motion.img>
+    <p className="hide-text text-xsm">JavaScript</p>
+    </div>,
+    Python: <div className="image-wrapper">
+    <motion.img variants={item} as="div" className='h-9 inline-block transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0' src="https://img.icons8.com/fluency/144/null/python.png"></motion.img>
+    <p className="hide-text text-xsm">Python</p>
+    </div>,
+    React:<div className="image-wrapper">
+    <motion.img variants={item} as="div" className='h-9 inline-block transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0' src="https://img.icons8.com/plasticine/200/null/react.png"></motion.img>
+    <p className="hide-text text-xsm">React</p>
+    </div>,
+    SQL:<div className="image-wrapper">
+    <motion.img variants={item} as="div" className='h-9 inline-block transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0' src="https://img.icons8.com/color/240/null/postgreesql.png"></motion.img>
+    <p className="hide-text text-xsm">SQL</p>
+    </div>,
+    NodeJS: <div className="image-wrapper">
+    <motion.img variants={item} as="div" className='h-9 inline-block transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0' src="https://img.icons8.com/fluency/240/null/node-js.png"></motion.img>
+    <p className="hide-text text-xsm">Node.js</p>
+    </div>,
+    Django: <div className="image-wrapper">
+    <motion.img variants={item} as="div" className='h-9 inline-block transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0' src="https://img.icons8.com/ios/250/null/django.png"></motion.img>
+    <p className="hide-text text-xsm">Django</p>
+    </div>,
+    MongoDB: <div className="image-wrapper">
+    <motion.img variants={item} as="div" className='h-9 inline-block transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0' src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/96/null/external-mongodb-a-cross-platform-document-oriented-database-program-logo-color-tal-revivo.png"></motion.img>
+    <p className="hide-text text-xsm">MongoDB</p>
+    </div>,
+    Express:<div className="image-wrapper">
+    <motion.img variants={item} as="div" className='h-9 inline-block transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0' src="https://img.icons8.com/ios/250/null/express-js.png"></motion.img>
+    <p className="hide-text text-xsm">Express</p>
+    </div>,
+    JWT:<div className="image-wrapper">
+    <motion.img variants={item} as="div" className='h-9 inline-block transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0' src="https://img.icons8.com/color/240/null/java-web-token.png"></motion.img>
+    <p className="hide-text text-xsm">JWT</p>
+    </div>,
+    API:<div className="image-wrapper">
+    <motion.img variants={item} as="div" className='h-9 inline-block transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0' src="https://img.icons8.com/nolan/96/api-settings.png"></motion.img>
+    <p className="hide-text text-xsm">API</p>
+    </div>,
+    Materialize:<div className="image-wrapper">
+    <motion.img variants={item} as="div" className='h-9 inline-block transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0' src="https://colinstodd.com/images/posts/matcss-min.png"></motion.img>
+    <p className="hide-text text-xsm">Materialize</p>
+    </div>,
+    Bootstrap:<div className="image-wrapper">
+    <motion.img variants={item} as="div" className='h-9 inline-block transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0' src="https://img.icons8.com/color/240/null/bootstrap.png"></motion.img>
+    <p className="hide-text text-xsm">Bootstrap</p>
+    </div>,
+    Tailwind:<div className="image-wrapper">
+    <motion.img variants={item} as="div" className='h-9 inline-block transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0' src="https://img.icons8.com/color/240/null/tailwindcss.png"></motion.img>
+    <p className="hide-text text-xsm">Tailwind</p>
+    </div>,
+    AWS:<div className="image-wrapper">
+    <motion.img variants={item} as="div" className='h-9 inline-block transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0' src="https://img.icons8.com/color/240/null/amazon-web-services.png"></motion.img>
+    <p className="hide-text text-xsm">AWS</p>
+    </div>,
+    GCloud:<div className="image-wrapper">
+    <motion.img variants={item} as="div" className='h-9 inline-block transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0' src="https://img.icons8.com/color/240/null/google-cloud.png"></motion.img>
+    <p className="hide-text text-xsm">GOauth</p>
+    </div>,
+  }
 
   export const ProjectData = [
     {
         name: "Pixel Perfect",
         img: "https://i.imgur.com/oh2paA6.png",
-        tech: "Python, Django, PostgreSQL, Materialize, AWS",
+        tech: [tech.Python, tech.Django, tech.SQL, tech.Materialize, tech.AWS],
         description: "With Pixel Perfect, you can share your photos and connect with friends and followers from around the world. Our platform is easy to use and offers a variety of features to enhance your social media experience. You can create a profile, share your photos, and engage with others by following other profiles, and liking or commenting on their photos.",
         link: "https://shielded-citadel-06625.herokuapp.com/about/",
         github: "https://github.com/Pixel-Perfect1/PixelPerfect"
@@ -48,7 +125,7 @@ export const Data = [
     {
         name: "FOODMoji",
         img: "https://i.imgur.com/1QKdAC9.png",
-        tech: "JavaScript, REACT, MongoDB, Mongoose, Express, Node.js, CSS & Bootstrap, JavaScript, JWT",
+        tech: [tech.JavaScript, tech.React, tech.MongoDB, tech.NodeJS, tech.JWT],
         description: "A MERN-stack single-page application (SPA) grocery shopping website.",
         link: "https://foodmoji.herokuapp.com/",
         github: "https://github.com/5amlim/foodmoji"
@@ -56,7 +133,7 @@ export const Data = [
     {
         name: "My Music",
         img: "https://i.imgur.com/tEdwIXr.png",
-        tech: "Python, Django, PostgreSQL, Materialize, AWS",
+        tech: [tech.Python, tech.Django, tech.SQL, tech.Materialize, tech.AWS],
         description: "Music session tracking website. Photo upload using AWS.",
         link: "",
         github: "https://github.com/5amlim/mymusic_app"
@@ -64,7 +141,7 @@ export const Data = [
     {
         name: "Recipe Journal",
         img: "https://i.imgur.com/IbXRV9c.png",
-        tech: "JavaScript, Express, MongoDB, Mongoose, Node.js, CSS & Bootstrap, Google OAuth",
+        tech: [tech.JavaScript, tech.MongoDB, tech.NodeJS, tech.Bootstrap, tech.GCloud],
         description: "A public MEN-stack website to share recipes and interact with creaters by leaving comments and ratings.",
         link: "https://recipe-journal-5amlim.herokuapp.com/recipes",
         github: "https://github.com/5amlim/project2"
@@ -72,7 +149,7 @@ export const Data = [
     {
         name: "Memory Game",
         img: "https://i.imgur.com/DY9xeAu.png",
-        tech: "Vanilla JavaScript, CSS, HTML",
+        tech: [tech.JavaScript, tech.CSS, tech.HTML],
         description: "There are many variations of memory game on the web. For my first project, I wanted to make this game aesthetically pleasing to make it a little more interesting. Inspired by pixel art.",
         link: "https://5amlim.github.io/project-1/",
         github: "https://github.com/5amlim/project-1"
