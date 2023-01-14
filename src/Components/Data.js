@@ -2,7 +2,7 @@ export const Data = [
     {
       id: 1,
       image: "https://i.imgur.com/zZ1qbTF.png",
-      title: "Siharth Nand",
+      title: "Sidharth Nand",
       description:
         "I had the pleasure of working with Sam in class and can highly recommend him for any opportunity in the field of software engineering. Sam consistently demonstrated a strong work ethic and a proactive approach to learning new technologies. He was always willing to go above and beyond to complete assignments and he was a valuable resource for anyone seeking help with a project. In addition, Sam impressed me with his resourcefulness and motivation. He always found a way to solve problems and he did so with determination and drive. I have no doubt that Sam will excel as a software engineer and I wholeheartedly recommend him.",
     },

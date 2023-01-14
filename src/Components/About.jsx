@@ -67,7 +67,7 @@ export default function About() {
             </div>
           </div>
 
-          <div className="flex">
+          <div className="flex ">
             <div className="image-wrapper">
             <motion.img variants={item} as="div" className='w-auto h-12 inline-block transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0' src="https://img.icons8.com/fluency/240/null/node-js.png"></motion.img>
             <p className="hide-text">Node.js</p>
