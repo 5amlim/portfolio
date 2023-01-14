@@ -25,8 +25,14 @@ export default function About() {
         </span>
         </motion.div>
         <br></br>
-        <p className='text-main'>
-        As a software developer, I am passionate about tackling algorithmically complex problems and exploring new applications of technology. I thrive in team environments and have a natural aptitude for problem-solving. With experience in both the healthcare industry and academia, I have a unique perspective on the importance of utilizing technology to improve people's lives. My experience in healthcare industry has given me insights into the real-world problems that arise in healthcare and the importance of reliable and efficient software solutions. My time in academia has sharpened my technical skills and my ability to think critically and creatively. I am driven to continuously learn and hone my skills in software development and to stay current with the latest trends and technologies. I am determined to utilize my skills and passion to incorporate emerging technologies to solve everyday problems and make a positive impact on the world.</p>
+        <p className='text-main indent-8 text-justify'>
+        As a software developer, I am passionate about tackling algorithmically complex problems and exploring new applications of technology. 
+        I thrive in team environments and have a natural aptitude for problem-solving. With experience in both the healthcare industry and academia, I have a unique perspective on the importance of utilizing technology to improve people's lives.
+        My experience in healthcare industry has given me insights into the real-world problems that arise in healthcare and the importance of reliable and efficient software solutions. 
+        My time in academia has sharpened my technical skills and my ability to think critically and creatively. I am driven to continuously learn and hone my skills in software development and to stay current with the latest trends and technologies.
+        I am determined to utilize my skills and passion to incorporate emerging technologies to solve everyday problems and make a positive impact on the world.
+        Aside from coding, I enjoy reading, or hanging out with my beautiful dogs, Toast and Chip.
+        </p>
         <br></br>
         <motion.div initial={{ x: 500 }} animate={{ x: 0 }} transition={{ type: "spring", stiffness: 100 }} className='text-right'>
           <p className='text-3xl italic'>MY SKILLS</p>
