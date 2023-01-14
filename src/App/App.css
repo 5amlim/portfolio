@@ -114,10 +114,6 @@ body {
     justify-content: center;
     margin-bottom: 20px;
   }
-  
-  @media (max-width: 455px){
-
-  }
 
 .screenshots{
   margin-left: 150px;
