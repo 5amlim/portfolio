@@ -2,6 +2,7 @@
 body {
     background:#0b1d2a;
   }
+
   
   .arrows {
     width: 60px;
@@ -119,6 +120,8 @@ body {
     justify-content: center;
     text-align: center;
     margin-bottom: 20px;
+    margin-right: 0px;
+    margin-left: 0px;
     display: grid;
     place-items: center;
   }
