@@ -44,71 +44,71 @@ export const Data = [
 
   const tech = {
     HTML:<div className="image-wrapper">
-    <motion.img variants={item} as="div" className='h-9 inline-block transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0 ' src="https://img.icons8.com/color/240/null/html-5--v1.png"></motion.img>
+    <motion.img variants={item} as="div" className='h-9 inline-block transition-all duration-300 filter grayscale hover:grayscale-0 ' src="https://img.icons8.com/color/240/null/html-5--v1.png"></motion.img>
     <p className="hide-text text-xsm">HTML</p>
     </div>,
     CSS:<div className="image-wrapper">
-    <motion.img variants={item} as="div" className='h-9 inline-block transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0' src="https://img.icons8.com/color/240/null/css3.png"></motion.img>
+    <motion.img variants={item} as="div" className='h-9 inline-block transition-all duration-300 filter grayscale hover:grayscale-0' src="https://img.icons8.com/color/240/null/css3.png"></motion.img>
     <p className="hide-text text-xsm">CSS</p>
     </div>,
     JavaScript:<div className="image-wrapper">
-    <motion.img variants={item} as="div" className='h-9 inline-block transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0' src="https://img.icons8.com/color/240/null/javascript--v1.png"></motion.img>
+    <motion.img variants={item} as="div" className='h-9 inline-block transition-all duration-300 filter grayscale hover:grayscale-0' src="https://img.icons8.com/color/240/null/javascript--v1.png"></motion.img>
     <p className="hide-text text-xsm">JavaScript</p>
     </div>,
     Python: <div className="image-wrapper">
-    <motion.img variants={item} as="div" className='h-9 inline-block transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0' src="https://img.icons8.com/fluency/144/null/python.png"></motion.img>
+    <motion.img variants={item} as="div" className='h-9 inline-block transition-all duration-300 filter grayscale hover:grayscale-0' src="https://img.icons8.com/fluency/144/null/python.png"></motion.img>
     <p className="hide-text text-xsm">Python</p>
     </div>,
     React:<div className="image-wrapper">
-    <motion.img variants={item} as="div" className='h-9 inline-block transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0' src="https://img.icons8.com/plasticine/200/null/react.png"></motion.img>
+    <motion.img variants={item} as="div" className='h-9 inline-block transition-all duration-300 filter grayscale hover:grayscale-0' src="https://img.icons8.com/plasticine/200/null/react.png"></motion.img>
     <p className="hide-text text-xsm">React</p>
     </div>,
     SQL:<div className="image-wrapper">
-    <motion.img variants={item} as="div" className='h-9 inline-block transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0' src="https://img.icons8.com/color/240/null/postgreesql.png"></motion.img>
+    <motion.img variants={item} as="div" className='h-9 inline-block transition-all duration-300 filter grayscale hover:grayscale-0' src="https://img.icons8.com/color/240/null/postgreesql.png"></motion.img>
     <p className="hide-text text-xsm">SQL</p>
     </div>,
     NodeJS: <div className="image-wrapper">
-    <motion.img variants={item} as="div" className='h-9 inline-block transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0' src="https://img.icons8.com/fluency/240/null/node-js.png"></motion.img>
+    <motion.img variants={item} as="div" className='h-9 inline-block transition-all duration-300 filter grayscale hover:grayscale-0' src="https://img.icons8.com/fluency/240/null/node-js.png"></motion.img>
     <p className="hide-text text-xsm">Node.js</p>
     </div>,
     Django: <div className="image-wrapper">
-    <motion.img variants={item} as="div" className='h-9 inline-block transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0' src="https://img.icons8.com/ios/250/null/django.png"></motion.img>
+    <motion.img variants={item} as="div" className='h-9 inline-block transition-all duration-300 filter grayscale hover:grayscale-0' src="https://img.icons8.com/ios/250/null/django.png"></motion.img>
     <p className="hide-text text-xsm">Django</p>
     </div>,
     MongoDB: <div className="image-wrapper">
-    <motion.img variants={item} as="div" className='h-9 inline-block transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0' src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/96/null/external-mongodb-a-cross-platform-document-oriented-database-program-logo-color-tal-revivo.png"></motion.img>
+    <motion.img variants={item} as="div" className='h-9 inline-block transition-all duration-300 filter grayscale hover:grayscale-0' src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/96/null/external-mongodb-a-cross-platform-document-oriented-database-program-logo-color-tal-revivo.png"></motion.img>
     <p className="hide-text text-xsm">MongoDB</p>
     </div>,
     Express:<div className="image-wrapper">
-    <motion.img variants={item} as="div" className='h-9 inline-block transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0' src="https://img.icons8.com/ios/250/null/express-js.png"></motion.img>
+    <motion.img variants={item} as="div" className='h-9 inline-block transition-all duration-300 filter grayscale hover:grayscale-0' src="https://img.icons8.com/ios/250/null/express-js.png"></motion.img>
     <p className="hide-text text-xsm">Express</p>
     </div>,
     JWT:<div className="image-wrapper">
-    <motion.img variants={item} as="div" className='h-9 inline-block transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0' src="https://img.icons8.com/color/240/null/java-web-token.png"></motion.img>
+    <motion.img variants={item} as="div" className='h-9 inline-block transition-all duration-300 filter grayscale hover:grayscale-0' src="https://img.icons8.com/color/240/null/java-web-token.png"></motion.img>
     <p className="hide-text text-xsm">JWT</p>
     </div>,
     API:<div className="image-wrapper">
-    <motion.img variants={item} as="div" className='h-9 inline-block transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0' src="https://img.icons8.com/nolan/96/api-settings.png"></motion.img>
+    <motion.img variants={item} as="div" className='h-9 inline-block transition-all duration-300 filter grayscale hover:grayscale-0' src="https://img.icons8.com/nolan/96/api-settings.png"></motion.img>
     <p className="hide-text text-xsm">API</p>
     </div>,
     Materialize:<div className="image-wrapper">
-    <motion.img variants={item} as="div" className='h-9 inline-block transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0' src="https://colinstodd.com/images/posts/matcss-min.png"></motion.img>
+    <motion.img variants={item} as="div" className='h-9 inline-block transition-all duration-300 filter grayscale hover:grayscale-0' src="https://colinstodd.com/images/posts/matcss-min.png"></motion.img>
     <p className="hide-text text-xsm">Materialize</p>
     </div>,
     Bootstrap:<div className="image-wrapper">
-    <motion.img variants={item} as="div" className='h-9 inline-block transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0' src="https://img.icons8.com/color/240/null/bootstrap.png"></motion.img>
+    <motion.img variants={item} as="div" className='h-9 inline-block transition-all duration-300 filter grayscale hover:grayscale-0' src="https://img.icons8.com/color/240/null/bootstrap.png"></motion.img>
     <p className="hide-text text-xsm">Bootstrap</p>
     </div>,
     Tailwind:<div className="image-wrapper">
-    <motion.img variants={item} as="div" className='h-9 inline-block transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0' src="https://img.icons8.com/color/240/null/tailwindcss.png"></motion.img>
+    <motion.img variants={item} as="div" className='h-9 inline-block transition-all duration-300 filter grayscale hover:grayscale-0' src="https://img.icons8.com/color/240/null/tailwindcss.png"></motion.img>
     <p className="hide-text text-xsm">Tailwind</p>
     </div>,
     AWS:<div className="image-wrapper">
-    <motion.img variants={item} as="div" className='h-9 inline-block transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0' src="https://img.icons8.com/color/240/null/amazon-web-services.png"></motion.img>
+    <motion.img variants={item} as="div" className='h-9 inline-block transition-all duration-300 filter grayscale hover:grayscale-0' src="https://img.icons8.com/color/240/null/amazon-web-services.png"></motion.img>
     <p className="hide-text text-xsm">AWS</p>
     </div>,
     GCloud:<div className="image-wrapper">
-    <motion.img variants={item} as="div" className='h-9 inline-block transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0' src="https://img.icons8.com/color/240/null/google-cloud.png"></motion.img>
+    <motion.img variants={item} as="div" className='h-9 inline-block transition-all duration-300 filter grayscale hover:grayscale-0' src="https://img.icons8.com/color/240/null/google-cloud.png"></motion.img>
     <p className="hide-text text-xsm">GOauth</p>
     </div>,
   }
