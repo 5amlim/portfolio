@@ -2,6 +2,7 @@ import { Fragment} from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { motion } from "framer-motion";
+import { Sam } from './Data';
 import 'flowbite';
 import '../App/App.css'
 
@@ -192,7 +193,7 @@ export default function NavBar ({scrollToSection, projects, about, contact, test
                           {({ active }) => (
                               <p align="center">
                                   <a
-                                      href="https://docs.google.com/document/d/1R7FVwXQkvP-qNXnVpGa3oxGP3hoaOQukBjyUVKQ2B0Y/edit?usp=sharing"
+                                      href={Sam.resume}
                                       target="_blank" rel="noopener noreferrer"
                                       className="bg-gray-100 block px-4 py-2 text-sm text-gray-700"
                                   >

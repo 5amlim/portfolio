@@ -1,6 +1,7 @@
 import 'flowbite';
 import '../App/App.css'
 import React, { useRef, useState } from 'react';
+import { Sam } from './Data';
 import emailjs from 'emailjs-com';
 
 
@@ -65,7 +66,7 @@ export default function Contact () {
                         </div>
                         <br></br>
                         <p className="text-sm text-gray-500 dark:text-gray-400">Resume</p>
-                        <a href="https://docs.google.com/document/d/1R7FVwXQkvP-qNXnVpGa3oxGP3hoaOQukBjyUVKQ2B0Y/edit?usp=sharing" target="_blank" rel="noopener noreferrer" className="social-wrapper text-gray-400 hover:text-gray-900 dark:hover:text-white ">
+                        <a href={Sam.resume} target="_blank" rel="noopener noreferrer" className="social-wrapper text-gray-400 hover:text-gray-900 dark:hover:text-white ">
                             <img src="https://img.icons8.com/carbon-copy/100/null/resume.png" className="w-10 h-10 transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0"></img>
                             <p className="hide-social">VIEW</p>
                         </a>
