@@ -26,8 +26,8 @@ export default function About() {
         </motion.div>
         <br></br>
         <p className='text-main indent-8 text-justify'>
-        As a software developer, I am passionate about tackling complex problems and exploring new applications of technology in team environments. 
-        I have experience in both healthcare industry and academia, providing me with a unique perspective on utilizing technology to improve people's lives. 
+        As a software developer, I am passionate about tackling algorithmically complex problems and exploring new applications of technology.
+        My experience in healthcare and academia provided me a unique perspective on the importance of utilizing technology to improve people's lives.
         I am driven to continuously learn and stay current with the latest trends and technologies, with the goal of making a positive impact on the world. 
         In my free time, I enjoy reading and spending time with my dogs Toast and Chip.
         </p>
