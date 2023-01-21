@@ -39,7 +39,7 @@ export default function About() {
           <hr></hr>
           <br></br>
         
-        <motion.div variants={container} initial="hidden" animate="show" className='skills flex justify-evenly overflow-x-scroll mx-0'>
+        <motion.div variants={container} initial="hidden" animate="show" className='skills flex justify-evenly overflow-x-auto overflow-auto mx-0'>
           
           <div className="flex">
             <div className="image-wrapper">
