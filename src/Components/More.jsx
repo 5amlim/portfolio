@@ -31,6 +31,7 @@ export default function More() {
                         <br></br>- Identified challenges and solutions to improve productivity and ensure a smooth workflow
                         <br></br>- Lab Technician duties including LIS operation, CAP compliance, pre-analytic sample handling, RT-PCR processing, Sysmex blood panel analysis, and various rapid COVID testing instruments
                         <br></br>- Assisted in the development of a new application for specimen receiving by collaborating with the product owner and software developers in the creation of the interface
+                        <br></br>- Optimized the specimen receiving and accessioning workflow by implementing the new software created in collaboration with the dev team
                     </p>
                 </li>
                 <li className="mb-10 ml-4">
