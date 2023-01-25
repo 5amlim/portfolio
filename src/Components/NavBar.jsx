@@ -70,6 +70,22 @@ export default function NavBar ({scrollToSection, projects, about, contact, test
                       
                     </div>
                   </div>
+                  
+                  <div className="hidden sm:ml-6 sm:block">
+                    <div className="flex space-x-4 justify-center">
+                        <a
+                          as="div"
+                          className=" text-white hover:bg-gray-700 hover:text-white hover:cursor-pointer
+                            px-3 py-2 rounded-md text-sm font-medium"
+                          onClick={() => scrollToSection(testimonial)}
+                        >
+                          <motion.p whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
+                            Testimonials
+                          </motion.p>
+                        </a>
+                      
+                    </div>
+                  </div>
 
                   <div className="hidden sm:ml-6 sm:block">
                     <div className="flex space-x-4 justify-center">
@@ -87,21 +103,6 @@ export default function NavBar ({scrollToSection, projects, about, contact, test
                     </div>
                   </div>
 
-                  <div className="hidden sm:ml-6 sm:block">
-                    <div className="flex space-x-4 justify-center">
-                        <a
-                          as="div"
-                          className=" text-white hover:bg-gray-700 hover:text-white hover:cursor-pointer
-                            px-3 py-2 rounded-md text-sm font-medium"
-                          onClick={() => scrollToSection(testimonial)}
-                        >
-                          <motion.p whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
-                            Testimonials
-                          </motion.p>
-                        </a>
-                      
-                    </div>
-                  </div>
 
                 </div>
                 <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
@@ -234,6 +235,15 @@ export default function NavBar ({scrollToSection, projects, about, contact, test
 
                   <Disclosure.Button
                     as="a"
+                    onClick={() => scrollToSection(testimonial)}
+                    className=" text-white hover:bg-gray-700 hover:text-white
+                      block px-3 py-2 rounded-md text-base font-medium"
+                  >
+                    <motion.p whileHover={{ scale: 1.1, x:25}} whileTap={{ scale: 0.9 }}>Testimonials</motion.p>
+                  </Disclosure.Button>
+
+                  <Disclosure.Button
+                    as="a"
                     onClick={() => scrollToSection(contact)}
                     className=" text-white hover:bg-gray-700 hover:text-white
                       block px-3 py-2 rounded-md text-base font-medium"
@@ -241,14 +251,6 @@ export default function NavBar ({scrollToSection, projects, about, contact, test
                     <motion.p whileHover={{ scale: 1.1, x:25}} whileTap={{ scale: 0.9 }}>Contact</motion.p>
                   </Disclosure.Button>
 
-                  <Disclosure.Button
-                    as="a"
-                    onClick={() => scrollToSection(testimonial)}
-                    className=" text-white hover:bg-gray-700 hover:text-white
-                      block px-3 py-2 rounded-md text-base font-medium"
-                  >
-                    <motion.p whileHover={{ scale: 1.1, x:25}} whileTap={{ scale: 0.9 }}>Testimonials</motion.p>
-                  </Disclosure.Button>
 
               </motion.div>
             </Disclosure.Panel>
