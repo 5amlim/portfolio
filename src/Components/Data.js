@@ -116,6 +116,10 @@ export const Data = [
     <motion.img variants={item} as="div" className='h-9 inline-block transition-all duration-300 filter grayscale hover:grayscale-0' src="https://img.icons8.com/color/240/null/google-cloud.png"></motion.img>
     <p className="hide-text text-xsm">GOauth</p>
     </div>,
+    Flask:<div className="image-wrapper">
+    <motion.img variants={item} as="div" className='h-9 inline-block transition-all duration-300 filter grayscale hover:grayscale-0' src="https://img.icons8.com/ios-filled/500/null/flask.png"></motion.img>
+    <p className="hide-text text-xsm">Flask</p>
+    </div>,
   }
 
   export const ProjectData = [
@@ -159,5 +163,13 @@ export const Data = [
         link: "https://5amlim.github.io/project-1/",
         github: "https://github.com/5amlim/project-1"
     },
+    {
+      name: "Tip Calculator",
+      img: "https://i.imgur.com/0y3yTUw.png",
+      tech: [tech.Python, tech.CSS, tech.HTML, tech.Flask, tech.Tailwind],
+      description: "Simple tip calculator.",
+      link:"",
+      github: "https://github.com/5amlim/tip-calculator/"
+  },
 
 ]
