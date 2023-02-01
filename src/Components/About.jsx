@@ -109,9 +109,13 @@ export default function About() {
             <p className="hide-text">Node.js</p>
             </div>
             <div className="image-wrapper">
+            <motion.img variants={item} as="div" className='h-12 inline-block transition-all duration-300 filter grayscale hover:grayscale-0' src="https://img.icons8.com/color/240/null/typescript.png"></motion.img>
+            <p className="hide-text">TypeScript</p>
+            </div>
+            {/* <div className="image-wrapper">
             <motion.img variants={item} as="div" className='h-12 inline-block transition-all duration-300 filter grayscale hover:grayscale-0' src="https://img.icons8.com/nolan/96/api-settings.png"></motion.img>
             <p className="hide-text">API</p>
-            </div>
+            </div> */}
             {/* <div className="image-wrapper">
             <motion.img variants={item} as="div" className='h-12 inline-block transition-all duration-300 filter grayscale hover:grayscale-0' src="https://img.icons8.com/color/240/null/heroku.png"></motion.img>
             <p className="hide-text">Heroku</p>
