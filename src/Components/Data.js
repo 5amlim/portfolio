@@ -135,7 +135,7 @@ export const Data = [
         name: "FOODMoji",
         img: "https://i.imgur.com/1QKdAC9.png",
         tech: [tech.JavaScript, tech.React, tech.MongoDB, tech.NodeJS, tech.JWT],
-        description: "A MERN-stack single-page application (SPA) grocery shopping website.",
+        description: "A MERN-stack single-page application (SPA) grocery shopping website. If you don't feel like signing up, use these credentials. Login: guest@gmail.com, Password: Guest1234!",
         link: "https://foodmoji.herokuapp.com/",
         github: "https://github.com/5amlim/foodmoji"
     },
