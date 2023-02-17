@@ -127,7 +127,7 @@ export const Data = [
         name: "Pixel Perfect",
         img: "https://i.imgur.com/oh2paA6.png",
         tech: [tech.Python, tech.Django, tech.SQL, tech.Materialize, tech.AWS],
-        description: "With Pixel Perfect, you can share your photos and connect with friends and followers from around the world. Our platform is easy to use and offers a variety of features to enhance your social media experience. You can create a profile, share your photos, and engage with others by following other profiles, and liking or commenting on their photos.",
+        description: "With Pixel Perfect, you can share your photos and connect with friends and followers from around the world. Our platform is easy to use and offers a variety of features to enhance your social media experience. You can create a profile, share your photos, and engage with others by following other profiles, and liking or commenting on their photos.  If you don't feel like signing up, use these credentials. Login: guest@gmail.com, Password: Guest1234!",
         link: "https://shielded-citadel-06625.herokuapp.com/about/",
         github: "https://github.com/Pixel-Perfect1/PixelPerfect"
     },
