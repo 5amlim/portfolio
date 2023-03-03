@@ -170,13 +170,21 @@ export const Data = [
       description: "Simple tip calculator.",
       link:"",
       github: "https://github.com/5amlim/tip-calculator/"
-  },
-  {
-    name: "React Portfolio",
-    img: "https://i.imgur.com/Z6M2mcX.png",
-    tech: [tech.React, tech.CSS, tech.Tailwind],
-    description: "(This Website). Single page React portfolio.",
-    link:"https://5amlim.github.io/portfolio/",
-    github: "https://github.com/5amlim/portfolio"
-},
+    },
+    {
+      name: "React Portfolio",
+      img: "https://i.imgur.com/Z6M2mcX.png",
+      tech: [tech.React, tech.CSS, tech.Tailwind],
+      description: "(This Website). Single page React portfolio.",
+      link:"https://5amlim.github.io/portfolio/",
+      github: "https://github.com/5amlim/portfolio"
+    },
+    {
+      name: "My Blogger (In Progress)",
+      img: "https://i.imgur.com/KIEc6N1.png",
+      tech: [tech.Python, tech.Django, tech.SQL, tech.Materialize],
+      description: "Welcome to My Blogger website! Our mission is to provide a platform for users to express themselves through blogging and sharing their interests with like-minded individuals. We strive to create a community where users can connect and discover new content, whether it be through images, videos, or text. Our website is designed to be user-friendly and easy to navigate, with a simple yet sleek interface. We value creativity and individuality, and encourage users to explore their passions and share their unique perspectives. At our core, we believe in the power of self-expression and the importance of community. We hope that our website will provide a space for individuals to connect, learn, and grow together. Thank you for joining us on this journey!",
+      link:"",
+      github: "https://github.com/5amlim/my_blogger"
+    },
 ]
