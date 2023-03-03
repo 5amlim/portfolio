@@ -174,7 +174,7 @@ export const Data = [
   {
     name: "React Portfolio",
     img: "https://i.imgur.com/Z6M2mcX.png",
-    tech: [tech.React, tech.CSS, tech.HTML, tech.Tailwind],
+    tech: [tech.React, tech.CSS, tech.Tailwind],
     description: "(This Website). Single page React portfolio.",
     link:"https://5amlim.github.io/portfolio/",
     github: "https://github.com/5amlim/portfolio"
