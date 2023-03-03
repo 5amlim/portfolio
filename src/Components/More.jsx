@@ -15,7 +15,7 @@ export default function More() {
                     <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
                     - Attended a 480+ hour program that covered the fundamentals of product development
                     <br></br>- Worked with object-oriented programming, MVC frameworks, data modeling, and team collaboration strategies.
-                    <br></br>- Participated in both individual and group projects to build full stack applications using various tools such as vanilla JS, MERN, and Django.
+                    <br></br>- Participated in both individual and group projects to build full stack applications using various technologies such as vanilla JavaScript, REACT, Python, NodeJS, Django, and more.
                     <br></br>- Assisted in debugging and troubleshooting with peers during the development process.
                     </p>
                     <a href={Sam.resume} target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700">
