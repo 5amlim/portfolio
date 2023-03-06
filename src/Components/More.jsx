@@ -13,8 +13,8 @@ export default function More() {
                     <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">October 2022 - January 2023</time>
                     <h3 className="text-lg font-semibold text-gray-900 dark:text-white">General Assembly<br></br>Software Engineering Fellow</h3>
                     <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
-                    - Attended a 480+ hour program that covered the fundamentals of product development
-                    <br></br>- Worked with object-oriented programming, MVC frameworks, data modeling, and team collaboration strategies.
+                    - Completed a 480+ hour program on product development fundamentals, object-oriented
+programming, MVC frameworks, data modeling, and team collaboration strategies
                     <br></br>- Participated in both individual and group projects to build full stack applications using various technologies such as vanilla JavaScript, REACT, Python, NodeJS, Django, and more.
                     <br></br>- Assisted in debugging and troubleshooting with peers during the development process.
                     </p>
