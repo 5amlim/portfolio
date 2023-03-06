@@ -4,11 +4,11 @@ import { useRef } from "react";
 import '../App/App.css'
 import { ProjectData }  from "./Data";
 
-function useParallax(value: MotionValue<number>, distance: number) {
+function useParallax(value, distance) {
     return useTransform(value, [0, 1], [-distance, distance]);
   }
   
-function Image({ name }: { name: number }) {
+function Image({ name }) {
     const ref = useRef(null);
     const { scrollYProgress } = useScroll({ target: ref });
     const y = useParallax(scrollYProgress, 250);
@@ -65,8 +65,8 @@ function Image({ name }: { name: number }) {
 
         </div>
         
-        {ProjectData.map((image) => (
-        <Image name={image} key={image.img} />
+        {ProjectData.map((project) => (
+        <Image name={project} key={project.img} />
         ))}
 
         </div>
