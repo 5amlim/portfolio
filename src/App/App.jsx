@@ -13,7 +13,7 @@ import Testimonial from '../Components/Testimonial';
 
 function Section({ children }) {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: false });
+  const isInView = useInView(ref, { once: true });
 
   return (
     <section ref={ref}>
