@@ -1,7 +1,7 @@
 import 'flowbite';
 import '../App/App.css'
 import React, { useRef, useState } from 'react';
-import { Sam } from './Data';
+import { Sam } from '../Utils/Data';
 import emailjs from 'emailjs-com';
 
 

@@ -1,4 +1,4 @@
-import { Sam } from "./Data"
+import { Sam } from "../Utils/Data"
 
 export default function More() {
 

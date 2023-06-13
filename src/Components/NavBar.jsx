@@ -2,7 +2,7 @@ import { Fragment} from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { motion } from "framer-motion";
-import { Sam } from './Data';
+import { Sam } from '../Utils/Data';
 import 'flowbite';
 import '../App/App.css'
 
@@ -125,7 +125,7 @@ export default function NavBar ({scrollToSection, projects, about, contact, test
                         <span className="sr-only">Open user menu</span>
                         <motion.img
                           className="h-8 w-8 rounded-full"
-                          src="https://i.imgur.com/gpSFTPD.jpg"
+                          src={Sam.picture}
                           alt="sam hay"
                           whileHover={{ scale: 1.3 }}
                           whileTap={{ scale: 0.8 }}

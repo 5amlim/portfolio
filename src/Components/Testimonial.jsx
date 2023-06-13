@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Data } from "./Data";
+import { Data } from "../Utils/Data";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";

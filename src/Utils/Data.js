@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
 
 export const Sam = {
-  resume: "https://drive.google.com/file/d/1BCa8AfCzmKUM4Rn2Yg4n4_-uKbuwpUyc/view?usp=sharing"
+  resume: "https://drive.google.com/file/d/1BCa8AfCzmKUM4Rn2Yg4n4_-uKbuwpUyc/view?usp=sharing",
+  picture: "https://i.imgur.com/gpSFTPD.jpg",
 }
 
 
