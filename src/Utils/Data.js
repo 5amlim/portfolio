@@ -3,6 +3,10 @@ import { motion } from "framer-motion";
 export const Sam = {
   resume: "https://drive.google.com/file/d/1BCa8AfCzmKUM4Rn2Yg4n4_-uKbuwpUyc/view?usp=sharing",
   picture: "https://i.imgur.com/gpSFTPD.jpg",
+  instagram: "https://www.instagram.com/5amlim/",
+  linkedin: "https://www.linkedin.com/in/samnanghay/",
+  github: "https://github.com/5amlim",
+  logo: "https://i.imgur.com/7C6HdFd.png",
 }
 
 

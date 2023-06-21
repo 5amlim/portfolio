@@ -29,12 +29,12 @@ export default function NavBar ({scrollToSection, projects, about, contact, test
                   <div className="flex flex-shrink-0 items-center">
                     <img
                       className="block h-8 w-auto lg:hidden"
-                      src="https://i.imgur.com/7C6HdFd.png"
+                      src= {Sam.logo}
                       alt="logo"
                     />
                     <img
                       className="hidden h-8 w-auto lg:block"
-                      src="https://i.imgur.com/7C6HdFd.png"
+                      src={Sam.logo}
                       alt="logo"
                     />
                   </div>
@@ -42,7 +42,7 @@ export default function NavBar ({scrollToSection, projects, about, contact, test
 
                   <div className="hidden sm:ml-6 sm:block">
                     <div className="flex space-x-4">
-                        <a
+                        <button
                           className=" text-white hover:bg-gray-700 hover:text-white hover:cursor-pointer
                             px-3 py-2 rounded-md text-sm font-medium"
                           
@@ -51,13 +51,13 @@ export default function NavBar ({scrollToSection, projects, about, contact, test
                           <motion.p whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
                             Sam Hay
                           </motion.p>
-                        </a>
+                        </button>
                       
                     </div>
                   </div>
                   <div className="hidden sm:ml-6 sm:block">
                     <div className="flex space-x-4 justify-center">
-                        <a
+                        <button
                           as="div"
                           className=" text-white hover:bg-gray-700 hover:text-white hover:cursor-pointer
                             px-3 py-2 rounded-md text-sm font-medium"
@@ -66,14 +66,14 @@ export default function NavBar ({scrollToSection, projects, about, contact, test
                           <motion.p whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
                             Projects
                           </motion.p>
-                        </a>
+                        </button>
                       
                     </div>
                   </div>
                   
                   <div className="hidden sm:ml-6 sm:block">
                     <div className="flex space-x-4 justify-center">
-                        <a
+                        <button
                           as="div"
                           className=" text-white hover:bg-gray-700 hover:text-white hover:cursor-pointer
                             px-3 py-2 rounded-md text-sm font-medium"
@@ -82,14 +82,14 @@ export default function NavBar ({scrollToSection, projects, about, contact, test
                           <motion.p whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
                             Testimonials
                           </motion.p>
-                        </a>
+                        </button>
                       
                     </div>
                   </div>
 
                   <div className="hidden sm:ml-6 sm:block">
                     <div className="flex space-x-4 justify-center">
-                        <a
+                        <button
                           as="div"
                           className=" text-white hover:bg-gray-700 hover:text-white hover:cursor-pointer
                             px-3 py-2 rounded-md text-sm font-medium"
@@ -98,7 +98,7 @@ export default function NavBar ({scrollToSection, projects, about, contact, test
                           <motion.p whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
                             Contact
                           </motion.p>
-                        </a>
+                        </button>
                       
                     </div>
                   </div>
@@ -148,7 +148,7 @@ export default function NavBar ({scrollToSection, projects, about, contact, test
                           {({ active }) => (
                               <p align="center">
                                   <a
-                                      href="https://www.instagram.com/5amlim/"
+                                      href= {Sam.instagram}
                                       target="_blank" rel="noopener noreferrer"
                                       className="bg-gray-100 block px-4 py-2 text-sm text-gray-700"
                                   >
@@ -163,7 +163,7 @@ export default function NavBar ({scrollToSection, projects, about, contact, test
                           {({ active }) => (
                               <p align="center">
                                   <a
-                                      href="https://www.linkedin.com/in/samnanghay/"
+                                      href={Sam.linkedin}
                                       
                                       target="_blank" rel="noopener noreferrer"
                                       className="bg-gray-100 block px-4 py-2 text-sm text-gray-700"
@@ -179,7 +179,7 @@ export default function NavBar ({scrollToSection, projects, about, contact, test
                           {({ active }) => (
                               <p align="center">
                                   <a
-                                      href="https://github.com/5amlim"
+                                      href= {Sam.github}
                                       target="_blank" rel="noopener noreferrer"
                                       className="bg-gray-100 block px-4 py-2 text-sm text-gray-700"
                                   >
