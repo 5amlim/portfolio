@@ -7,7 +7,7 @@ export default function ScrollUp ({scrollToSection, topPart}) {
     const [showIcon, setShowIcon] = useState(false)
 
     const handleScroll = () => {
-        if (window.pageYOffset >= 100) {
+        if (window.scrollY >= 100) {
         setShowIcon(true)
         } else {
         setShowIcon(false)
