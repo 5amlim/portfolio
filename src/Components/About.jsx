@@ -63,8 +63,8 @@ export default function About() {
             <p className="hide-text">Python</p>
             </div>
             <div className="image-wrapper">
-            <motion.img variants={item} as="div" className='h-12 inline-block transition-all duration-300 filter grayscale hover:grayscale-0' src="https://img.icons8.com/ios/250/null/django.png"></motion.img>
-            <p className="hide-text">Django</p>
+            <motion.img variants={item} as="div" className='h-12 inline-block transition-all duration-300 filter grayscale hover:grayscale-0' src="https://img.icons8.com/color/240/null/typescript.png"></motion.img>
+            <p className="hide-text">TypeScript</p>
             </div>
             <div className="image-wrapper">
             <motion.img variants={item} as="div" className='h-12 inline-block transition-all duration-300 filter grayscale hover:grayscale-0' src="https://img.icons8.com/plasticine/200/null/react.png"></motion.img>
@@ -82,16 +82,16 @@ export default function About() {
 
           <div className="flex ">
             <div className="image-wrapper">
+            <motion.img variants={item} as="div" className='h-12 inline-block transition-all duration-300 filter grayscale hover:grayscale-0' src="https://angular.io/assets/images/logos/angularjs/AngularJS-Shield.svg" alt="Angular"></motion.img>
+            <p className="hide-text">Angular</p>
+            </div>
+            <div className="image-wrapper">
             <motion.img variants={item} as="div" className='h-12 inline-block transition-all duration-300 filter grayscale hover:grayscale-0' src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/96/null/external-mongodb-a-cross-platform-document-oriented-database-program-logo-color-tal-revivo.png"></motion.img>
             <p className="hide-text">MongoDB</p>
             </div>
             <div className="image-wrapper">
             <motion.img variants={item} as="div" className='h-12 inline-block transition-all duration-300 filter grayscale hover:grayscale-0' src="https://img.icons8.com/color/240/null/postgreesql.png"></motion.img>
             <p className="hide-text">SQL</p>
-            </div>
-            <div className="image-wrapper">
-            <motion.img variants={item} as="div" className='h-12 inline-block transition-all duration-300 filter grayscale hover:grayscale-0' src="https://img.icons8.com/color/240/null/java-web-token.png"></motion.img>
-            <p className="hide-text">JWT</p>
             </div>
             {/* <div className="image-wrapper">
             <motion.img variants={item} as="div" className='h-12 inline-block transition-all duration-300 filter grayscale hover:grayscale-0' src="https://img.icons8.com/color/240/null/amazon-web-services.png"></motion.img>
@@ -109,8 +109,8 @@ export default function About() {
             <p className="hide-text">Node.js</p>
             </div>
             <div className="image-wrapper">
-            <motion.img variants={item} as="div" className='h-12 inline-block transition-all duration-300 filter grayscale hover:grayscale-0' src="https://img.icons8.com/color/240/null/typescript.png"></motion.img>
-            <p className="hide-text">TypeScript</p>
+            <motion.img variants={item} as="div" className='h-12 inline-block transition-all duration-300 filter grayscale hover:grayscale-0' src="https://img.icons8.com/ios/250/null/django.png"></motion.img>
+            <p className="hide-text">Django</p>
             </div>
             {/* <div className="image-wrapper">
             <motion.img variants={item} as="div" className='h-12 inline-block transition-all duration-300 filter grayscale hover:grayscale-0' src="https://img.icons8.com/nolan/96/api-settings.png"></motion.img>

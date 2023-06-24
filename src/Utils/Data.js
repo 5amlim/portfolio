@@ -5,8 +5,13 @@ export const Sam = {
   picture: "https://i.imgur.com/gpSFTPD.jpg",
   instagram: "https://www.instagram.com/5amlim/",
   linkedin: "https://www.linkedin.com/in/samnanghay/",
+  twitter: "https://twitter.com/5amlim",
   github: "https://github.com/5amlim",
   logo: "https://i.imgur.com/7C6HdFd.png",
+  email: "snh68@yahoo.com",
+  phone: "(415)-340-9153"
+  
+
 }
 
 
