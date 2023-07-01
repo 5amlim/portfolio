@@ -1,5 +1,5 @@
 
-import { motion, useScroll, useTransform, MotionValue } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import '../App/App.css'
 import { ProjectData }  from "../Utils/Data";
@@ -56,12 +56,14 @@ function Image({ name }) {
         <span  className="text-right float-right  text-5xl box-decoration-clone bg-gradient-to-r from-violet-500/90 to-blue-900 text-white px-2 ">
         My<br/>Projects
         </span>
-        <div className="mx-auto">
+        <div className="mx-auto max-w-screen">
         <motion.hr initial={{ x: -100 }} animate={{ x: 0 }} transition={{ delay: 1.5 }} className="w-5 h-1 my-8 bg-gradient-to-r from-indigo-600 to-pink-500 text-white"></motion.hr>
         <motion.hr initial={{ x: -100 }} animate={{ x: 0 }} transition={{ delay: 1.5 }} className="w-10 h-1 my-8 bg-gradient-to-r from-indigo-600 to-pink-500 text-white"></motion.hr>
         <motion.hr initial={{ x: -200 }} animate={{ x: 0 }} transition={{ delay: 1.5 }} className="w-20 h-1 my-8 bg-gradient-to-r from-indigo-600 to-pink-500 text-white"></motion.hr>
-        <motion.hr initial={{ x: -400 }} animate={{ x: 0 }} transition={{ delay: 1.5 }} className="w-40 h-1 my-8 bg-gradient-to-r from-indigo-600 to-pink-500 text-white"></motion.hr>
-        <motion.hr initial={{ x: -800 }} animate={{ x: 0 }} transition={{ delay: 1.5 }} className="w-80 h-1 my-8 bg-gradient-to-r from-indigo-600 to-pink-500 text-white"></motion.hr>
+        <motion.hr initial={{ x: -100 }} animate={{ x: 0 }} transition={{ delay: 1.5 }} className="w-10 h-1 my-8 bg-gradient-to-r from-indigo-600 to-pink-500 text-white"></motion.hr>
+        <motion.hr initial={{ x: -100 }} animate={{ x: 0 }} transition={{ delay: 1.5 }} className="w-5 h-1 my-8 bg-gradient-to-r from-indigo-600 to-pink-500 text-white"></motion.hr>
+        <br></br>
+        <br></br>
 
         </div>
         
