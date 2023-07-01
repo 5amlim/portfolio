@@ -1,3 +1,9 @@
+.main-content {
+  width: 100%; /* Adjust the width as needed */
+  max-width: 100%; /* Add this to prevent the content from exceeding the screen width */
+  box-sizing: border-box; /* Include padding and border in the total width */
+}
+
 
 body {
     background:#0b1d2a;
@@ -95,6 +101,8 @@ body {
     padding-top: 50px;
     padding-left: 50px;
     padding-right: 50px;
+    max-width: 100%; /* Adjust the max-width as needed */
+  margin: 0 auto; /* Center the container horizontally */
   }
 
   .main-content {
