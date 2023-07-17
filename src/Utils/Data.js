@@ -134,13 +134,17 @@ export const Data = [
     <motion.img variants={item} as="div" className='h-9 inline-block transition-all duration-300 filter grayscale hover:grayscale-0' src="https://img.icons8.com/color/144/angularjs.png"></motion.img>
     <p className="hide-text text-xsm">Angular</p>
     </div>,
+    Typescript:<div className="image-wrapper">
+    <motion.img variants={item} as="div" className='h-9 inline-block transition-all duration-300 filter grayscale hover:grayscale-0' src="https://img.icons8.com/fluency/48/typescript--v1.png"></motion.img>
+    <p className="hide-text text-xsm">TypeScript</p>
+    </div>,
   }
 
   export const ProjectData = [
     {
       name: "Basil",
       img: "https://i.imgur.com/cHqqiP6.png",
-      tech: [tech.Angular, tech.MongoDB, tech.Express, tech.NodeJS, tech.AWS],
+      tech: [tech.Angular, tech.MongoDB, tech.Express, tech.NodeJS, tech.AWS, tech.Typescript],
       description: "Introducing Basil - A MEAN Stack Journal Sharing App. Basil is a captivating journal sharing application, powered by the MEAN (MongoDB, Express.js, Angular, Node.js) stack. With Angular at its core, Basil's intuitive user interface provides a smooth and delightful journaling experience. Express.js and Node.js combine to create a robust backend, ensuring secure data handling and lightning-fast responses. Basil is deployed on AWS S3 for the Angular app and AWS Elastic Beanstalk for the server. Enjoy a reliable and efficient journal sharing experience with the power of AWS's cloud infrastructure. So, immerse yourself in the world of journaling with Basil - where the MEAN stack's synergy meets AWS's exceptional hosting capabilities, creating an unmatched platform for sharing your cherished memories and creative narratives. Styled by Angular Material. If you don't feel like signing up, use these credentials. Login: guest@gmail.com, Password: Guest1234!",
       link: "http://basil-mean.s3-website-us-west-2.amazonaws.com/",
       github: "https://github.com/5amlim/basil"
