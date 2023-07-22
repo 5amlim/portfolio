@@ -1,5 +1,4 @@
-import { useRef} from 'react'
-import { useInView } from "framer-motion";
+import { useRef } from 'react'
 import NavBar from "../Components/NavBar";
 import Introduction from "../Components/Introduction";
 import About from "../Components/About";
@@ -11,27 +10,10 @@ import './App.css'
 import Testimonial from '../Components/Testimonial';
 
 
-function Section({ children }) {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
-
-  return (
-    <section ref={ref}>
-      <span
-        style={{
-          transform: isInView ? "none" : "translateX(-500px)",
-          opacity: isInView ? 1 : 0,
-          transition: "all 1s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
-        }}
-      >
-        {children}
-      </span>
-    </section>
-  );
-}
 
 
-export default function App () {
+
+export default function App() {
   const topPart = useRef(null)
   const about = useRef(null)
   const projects = useRef(null)
@@ -47,61 +29,61 @@ export default function App () {
 
 
 
-  return(
+  return (
     <div>
 
       <div ref={topPart} className="main-content bg-gradient-to-r from-orange-400 via-sky-800 to-indigo-400 bg-cover bg-center bg-opacity-75 bg-blur ">
         {/* navbar */}
-        <NavBar scrollToSection={scrollToSection} about={about} projects={projects} contact={contact} testimonial={testimonial}/>
-          
-        
+        <NavBar scrollToSection={scrollToSection} about={about} projects={projects} contact={contact} testimonial={testimonial} />
+
+
         {/* top part */}
         <div className="bg-cover bg-center bg-opacity-75 bg-blur h-screen w-screen" >
           <br></br>
-          
-          
 
-            <Section>
-              <Introduction />
-            </Section> 
+
+
+
+          <Introduction />
+
 
 
           <br></br>
           <br></br>
 
           <div ref={about} className="about">
-            <Section>
-              <About/>
-            </Section>
+
+            <About />
+
           </div>
 
           <div ref={projects} className="projects">
-            <Section>
-              <Projects /> 
-            </Section>
+
+            <Projects />
+
           </div>
 
           <div className="more">
-            <Section>
-              <More/>
-            </Section>
+
+            <More />
+
           </div>
 
           <div ref={testimonial} className="testimonial">
-            <Section>
-              <Testimonial/>
-            </Section>
+
+            <Testimonial />
+
           </div>
 
           <div ref={contact} className="contacts">
-            <Section>
-              <Contact Section={Section}/>
-            </Section>
+
+            <Contact />
+
           </div>
-        
-        </div>     
+
+        </div>
       </div>
-      < ScrollUp scrollToSection={scrollToSection} topPart={topPart}/>
+      < ScrollUp scrollToSection={scrollToSection} topPart={topPart} />
     </div>
   )
 }

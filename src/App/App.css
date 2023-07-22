@@ -1,15 +1,17 @@
-
 .main-content {
-  width: 100%; /* Adjust the width as needed */
-  max-width: 100%; /* Add this to prevent the content from exceeding the screen width */
-  box-sizing: border-box; /* Include padding and border in the total width */
+  width: 100%;
+  /* Adjust the width as needed */
+  max-width: 100%;
+  /* Add this to prevent the content from exceeding the screen width */
+  box-sizing: border-box;
+  /* Include padding and border in the total width */
   margin: 0px;
   padding: 0px;
 
 }
 
 body {
-  background:#0b1d2a;
+  background: #0b1d2a;
 }
 
 
@@ -24,78 +26,106 @@ body {
 .arrows path {
   stroke: #83b5d2;
   fill: transparent;
-  stroke-width: 1px;  
+  stroke-width: 1px;
   animation: arrow 2s infinite;
-  -webkit-animation: arrow 2s infinite; 
+  -webkit-animation: arrow 2s infinite;
 }
 
-@keyframes arrow
-{
-  0% {opacity:0}
-  40% {opacity:1}
-  80% {opacity:0}
-  100% {opacity:0}
+@keyframes arrow {
+  0% {
+    opacity: 0
+  }
+
+  40% {
+    opacity: 1
+  }
+
+  80% {
+    opacity: 0
+  }
+
+  100% {
+    opacity: 0
+  }
 }
 
-@-webkit-keyframes arrow /*Safari and Chrome*/
-{
-  0% {opacity:0}
-  40% {opacity:1}
-  80% {opacity:0}
-  100% {opacity:0}
+@-webkit-keyframes arrow
+
+/*Safari and Chrome*/
+  {
+  0% {
+    opacity: 0
+  }
+
+  40% {
+    opacity: 1
+  }
+
+  80% {
+    opacity: 0
+  }
+
+  100% {
+    opacity: 0
+  }
 }
 
 .arrows path.a1 {
-  animation-delay:-1s;
-  -webkit-animation-delay:-1s; /* Safari 和 Chrome */
+  animation-delay: -1s;
+  -webkit-animation-delay: -1s;
+  /* Safari 和 Chrome */
 }
 
 .arrows path.a2 {
-  animation-delay:-0.5s;
-  -webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
+  animation-delay: -0.5s;
+  -webkit-animation-delay: -0.5s;
+  /* Safari 和 Chrome */
 }
 
-.arrows path.a3 { 
-  animation-delay:0s;
-  -webkit-animation-delay:0s; /* Safari 和 Chrome */
+.arrows path.a3 {
+  animation-delay: 0s;
+  -webkit-animation-delay: 0s;
+  /* Safari 和 Chrome */
 }
 
 .about {
-  height:auto;
+  height: auto;
   width: auto;
-  background-color:#ffffff;
+  background-color: #ffffff;
   padding: 50px;
-  
+
 }
 
 .projects {
   height: auto;
   width: auto;
-  background-color:#eeeeeb;
-  padding:50px
+  background-color: #eeeeeb;
+  padding: 50px
 }
 
 .contacts {
   height: auto;
   width: auto;
-  background-color:#ffffff;
-  padding:50px
+  background-color: #ffffff;
+  padding: 50px
 }
 
 .more {
   height: auto;
   width: auto;
-  background-color:#ffffff;
-  padding:50px
+  background-color: #ffffff;
+  padding: 50px
 }
 
 .testimonial {
   height: auto;
   width: auto;
-  background-color:#e1e3e3;
-  padding:50px;
-  max-width: 100%; /* Adjust the max-width as needed */
-  margin: 0 auto; /* Center the container horizontally */
+  background-color: #e1e3e3;
+  padding: 50px;
+  max-width: 100%;
+  /* Adjust the max-width as needed */
+  margin: 0 auto;
+  /* Center the container horizontally */
 }
 
 .main-content {
@@ -103,7 +133,7 @@ body {
 }
 
 .scroll-up {
-  position:fixed;
+  position: fixed;
   bottom: 50px;
   left: 0;
   right: 0;
@@ -116,7 +146,7 @@ body {
   margin-bottom: 20px;
 }
 
-.screenshots{
+.screenshots {
   margin-left: 150px;
   margin-bottom: 0px;
 }
@@ -126,45 +156,50 @@ body {
   min-width: auto;
 }
 
-.testimonial-cards{
+.testimonial-cards {
   z-index: 0;
   width: 1000px
 }
 
 
-@media (max-width: 1040px){
+@media (max-width: 1040px) {
   .project {
     margin-left: 400px;
     font-size: small;
   }
-  .screenshots{
+
+  .screenshots {
     margin-left: 100px;
     width: 250px;
     font-size: small;
   }
-  .testimonial-cards{
+
+  .testimonial-cards {
     z-index: 0;
     width: auto;
   }
 }
 
 
-@media (max-width: 780px){
+@media (max-width: 780px) {
   .project {
     margin-left: 220px;
     width: 300px;
     font-size: small;
   }
-  .screenshots{
+
+  .screenshots {
     margin-left: 0;
     width: 200px;
     font-size: small;
   }
-  .testimonial-cards{
+
+  .testimonial-cards {
     z-index: 0;
     width: auto;
     font-size: small;
   }
+
   .skills {
     justify-content: center;
     text-align: center;
@@ -176,23 +211,26 @@ body {
 
 
 
-@media (max-width: 580px){
+@media (max-width: 580px) {
   .project {
     margin-left: 100px;
     width: 300px;
     font-size: small;
   }
-  .screenshots{
+
+  .screenshots {
     margin-left: 0;
     width: 200px;
     font-size: small;
-    
+
   }
-  .testimonial-cards{
+
+  .testimonial-cards {
     z-index: 0;
     width: auto;
     font-size: small;
   }
+
   .skills {
     justify-content: center;
     text-align: center;
@@ -202,22 +240,25 @@ body {
   }
 }
 
-@media (max-width: 455px){
+@media (max-width: 455px) {
   .project {
     margin-left: 0px;
     width: 250px;
     font-size: small;
   }
-  .screenshots{
+
+  .screenshots {
     margin-left: 0;
     width: 200px;
     font-size: small;
   }
-  .testimonial-cards{
+
+  .testimonial-cards {
     z-index: 0;
     width: auto;
     font-size: x-small;
   }
+
   .skills {
     justify-content: center;
     text-align: center;
@@ -230,20 +271,21 @@ body {
 
 
 
- .testimonial-description{
+.testimonial-description {
   margin-left: 20px;
   margin-right: 20px;
- }
+}
 
 
- .NavBar{
+.NavBar {
   z-index: 1;
- }
+}
 
- /* SKILLS */
- .image-wrapper {
+/* SKILLS */
+.image-wrapper {
   position: relative;
 }
+
 .image-wrapper img {
   display: block;
   margin-left: 0;
@@ -255,6 +297,7 @@ body {
   object-fit: contain;
   overflow-x: scroll;
 }
+
 .image-wrapper .hide-text {
   opacity: 0;
   position: relative;
@@ -265,23 +308,25 @@ body {
   color: #393838;
   text-decoration: none;
   text-align: center;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   -webkit-transition: opacity 500ms;
   -moz-transition: opacity 500ms;
   -o-transition: opacity 500ms;
   transition: opacity 500ms;
 
 }
+
 .image-wrapper:hover .hide-text {
   opacity: 0.8;
 }
 
 /* SOCIALS */
-.social-wrapper{
+.social-wrapper {
   position: relative;
   height: fit-content;
   display: block;
 }
+
 .social-wrapper img {
   display: block;
   margin-left: 0;
@@ -301,12 +346,13 @@ body {
   text-decoration: none;
   text-align: center;
   font-size: xx-small;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   -webkit-transition: opacity 500ms;
   -moz-transition: opacity 500ms;
   -o-transition: opacity 500ms;
   transition: opacity 500ms;
 }
+
 .social-wrapper:hover .hide-social {
   opacity: 0.8;
 }
@@ -317,6 +363,6 @@ body {
   text-align: center;
 }
 
-.email-form{
+.email-form {
   max-width: 700px;
 }
