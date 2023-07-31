@@ -149,7 +149,7 @@ export const ProjectData = [
     name: "FoodToGo (in progress)",
     img: "https://i.imgur.com/Z7EUwdw.png",
     tech: [tech.React, tech.Redux, tech.JavaScript, tech.Tailwind],
-    description: "FoodToGo is a powerful and optimized SPA food delivery app built with React and Redux Toolkit. Styled by Tailwind",
+    description: "FoodToGo is a powerful and optimized SPA food delivery app built with React and Redux Toolkit. Styled by Tailwind. API by ChowNow.",
     link: "",
     github: "https://github.com/5amlim/react"
   },
